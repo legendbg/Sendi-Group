@@ -17,7 +17,7 @@
     }
 
     &__text {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 16px;
         line-height: 106%;
         letter-spacing: 0em;
@@ -34,14 +34,14 @@
 
 .about-footer {
     &__title {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         color: #000;
         margin-bottom: 30px;
     }
 
     &__text {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         color: #000;
         display: flex;
@@ -83,7 +83,7 @@
     }
 
     &__text {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         color: #000;
     }
@@ -91,7 +91,7 @@
 
 .tags-footer {
     &__title {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: -0.02em;
@@ -115,7 +115,7 @@
     }
 
     &__text {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         letter-spacing: -0.02em;
         color: #282828;
@@ -124,7 +124,7 @@
 
 .contacts-footer {
     &__name {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: -0.02em;
@@ -140,7 +140,7 @@
     }
 
     &__text {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 18px;
         line-height: 78%;
         text-align: center;
@@ -155,7 +155,7 @@
     padding-top: 15px;
 
     &__copy {
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 16px;
         line-height: 187%;
         color: #000;

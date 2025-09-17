@@ -15,14 +15,14 @@
 }
 
 .goods__tab {
-    font-weight: 500;
+    font-family: "Gilroy-Medium", sans-serif;
     font-size: 14px;
     line-height: 115%;
     text-align: center;
     color: #fff;
     border: 1px solid #3f3f3f;
     border-radius: 3px;
-    padding: 12px 31px;
+    padding: 12px 13px;
     color: #282828;
 }
 
@@ -51,9 +51,8 @@
 }
 
 .goods__name {
-    font-weight: 500;
+    font-family: "Gilroy-Medium", sans-serif;
     font-size: 18px;
-    line-height: 333%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     margin-bottom: 15px;

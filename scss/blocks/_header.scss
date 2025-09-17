@@ -1,0 +1,96 @@
+.header {
+    padding: 21px 0px;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+    height: 82px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-left: -150px;
+    }
+
+    &__logo {
+        background-color: #fff;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 162%;
+        color: #1c1c1c;
+        font-family: "Gilroy-Medium", sans-serif;
+        font-weight: 500;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 93%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1c1c1c;
+        font-family: "Gilroy-Medium", sans-serif;
+    }
+
+    &__button {
+        border: 1px solid #1c1c1c;
+        border-radius: 5px;
+        padding: 13px 18px;
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-link {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 108%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1c1c1c;
+    }
+
+    &__button-arrow {
+        width: 10px;
+        height: 12px;
+    }
+}
+
+.link-products {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 7px;
+        background: url("../images/icons/link-plis.svg") 0 0 no-repeat;
+    }
+}

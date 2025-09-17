@@ -1,5 +1,28 @@
 //fonts
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: local('Gilroy-Bold'), url(../fonts/Gilroy-Bold) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: local('Gilroy-Medium'), url(../fonts/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: local('Gilroy-Regular'), url(../fonts/Gilroy-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy-SemiBold'), url(../fonts/Gilroy-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: local('Gilroy-ExtraBold'), url(../fonts/Gilroy-ExtraBold.ttf) format('truetype');
+}
 
 // helpers
 @import './base/vars';
@@ -15,3 +38,6 @@
 @import './blocks/who';
 @import './blocks/footer';
 @import './blocks/contacts';
+@import './blocks/home';
+@import './blocks/sidebar';
+@import './blocks/header';

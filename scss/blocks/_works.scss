@@ -1,5 +1,5 @@
 .works {
-    padding: 30px 0px;
+    padding: 30px 0px 50px 0px;
     border-top: 1px solid #ddd;
 }
 
@@ -22,6 +22,7 @@
     box-shadow: 10px 10px 45px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     padding: 25px;
+    min-width: 391px;
 }
 
 .works__decor {
@@ -29,7 +30,7 @@
 }
 
 .works__name {
-    font-weight: 600;
+    font-family: "Gilroy-SemiBold", sans-serif;
     font-size: 18px;
     line-height: 133%;
     color: #2b2b2b;
@@ -37,7 +38,7 @@
 }
 
 .works__subname {
-    font-weight: 500;
+    font-family: "Gilroy-Medium", sans-serif;
     font-size: 14px;
     line-height: 171%;
     color: #868686;

@@ -1,0 +1,36 @@
+.sidebar {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 109px 40px 141px 40px;
+    background-color: #fff;
+    width: 106px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 493px;
+        gap: 106px;
+    }
+    
+    &__link {
+        font-family: "Gilroy-Medium", sans-serif;
+        transform: rotate(-90deg);
+        font-size: 18px;
+        line-height: 144%;
+        color: #282828;
+    }
+
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
