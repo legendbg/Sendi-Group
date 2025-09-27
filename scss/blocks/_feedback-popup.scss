@@ -1,0 +1,144 @@
+.feedback-popup {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &__content {
+        position: relative;
+        max-width: 522px;
+        padding: 25px 38px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    &__cross {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 200%;
+        text-transform: capitalize;
+        text-align: center;
+        color: #000;
+
+        span {
+            font-family: "Bold", sans-serif;
+        }
+    }
+
+    &__texts {
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        text-align: center;
+        color: #000;
+
+        &:not(:last-child) {
+            margin-bottom: 1px;
+        }
+
+        span {
+            font-family: "Gilroy-Bold", sans-serif;
+        }
+    }
+}
+
+.form-popup {
+    &__fields {
+        margin-bottom: 25px;
+    }
+
+    &__field {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__label {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 14px;
+        color: #000;
+    }
+
+    &__input {
+        border: 1.5px solid #ddd;
+        border-radius: 5px;
+        padding: 19px 15px;
+        width: 100%;
+        font-weight: 400;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #777;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            color: #777;
+            font-family: "Gilroy-Regular", sans-serif;
+        }
+    }
+
+    &__textarea {
+        border: 1.5px solid #ddd;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 19px 15px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        color: #777;
+        height: 176px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            color: #777;
+            font-family: "Gilroy-Regular", sans-serif;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 19px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        text-transform: uppercase;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        background-color: #282828;
+
+        &::after {
+            content: "";
+            display: block;
+            background: url("../images/icons/button_white_arrow.svg") 0 0 no-repeat;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

@@ -2,16 +2,24 @@
     padding: 60px 0px;
     border-bottom: 1px solid #ddd;
 
-    &__container {
+    &__texts {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        gap: 31px;
     }
 
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 70px;
+    }
+    
     &__content {
         display: flex;
         align-items: flex-start;
         gap: 34px;
+        justify-content: space-between;
+        margin-bottom: 27px;
     }
 
     &__line {
@@ -35,7 +43,8 @@
         font-size: 56px;
         line-height: 107%;
         color: #1c1c1c;
-        max-width: 442px;
+        max-width: 715px;
+        margin-bottom: 15px;
 
         .orange {
             text-decoration: underline;
@@ -72,7 +81,6 @@
     }
 
     &__buttons {
-        margin-bottom: 45px;
         display: flex;
         align-items: center;
         gap: 20px;

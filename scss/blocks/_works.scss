@@ -3,6 +3,10 @@
     border-top: 1px solid #ddd;
 }
 
+.works ._container {
+    max-width: 1745px;
+}
+
 .works__title {
     font-weight: 400;
     font-size: 28px;
@@ -55,6 +59,7 @@
 .works__buttons {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 

@@ -1,0 +1,133 @@
+.good-popup {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    &__content {
+        position: relative;
+        display: flex;
+        align-items: stretch;
+    }
+
+    &__cross {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        padding: 24px;
+        background-color: #fff;
+        max-width: 313px;
+    }
+
+    &__title {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+    }
+
+    &__line {
+        margin: 20px 0px;
+        width: 100%;
+        height: 1px;
+        background-color: #d4d2d2;
+    }
+
+    &__desc {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #000;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__price {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 20px;
+        line-height: 100%;
+        color: #000;
+        text-align: center;
+    }
+
+    &__subtext {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 125%;
+        text-align: center;
+        color: #959595;
+    }
+
+    &__button {
+        border-radius: 5px;
+        padding: 19px 15px;
+        background-color: #f80;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    &__button-text {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+.share-good {
+    &__text {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 14px;
+        line-height: 143%;
+        color: #475156;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
