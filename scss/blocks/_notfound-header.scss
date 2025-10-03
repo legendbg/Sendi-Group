@@ -1,0 +1,25 @@
+.notfound-header {
+    padding: 32px 0px;
+    border-bottom: 1px solid #ddd;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 93%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1c1c1c;
+    }
+}

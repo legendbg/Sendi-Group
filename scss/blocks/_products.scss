@@ -22,6 +22,14 @@
     }
 }
 
+.tab-subtab {
+    display: none;
+}
+
+.tab-subtab.active-tab {
+    display: flex !important;
+}
+
 .products__tab {
     font-family: "Gilroy-Medium", sans-serif;
     font-size: 14px;
@@ -30,13 +38,12 @@
     color: #fff;
     border: 1px solid #3f3f3f;
     border-radius: 3px;
-    padding: 12px 13px;
+    padding: 12px 31px;
     color: #282828;
 }
 
-.active-tab {
+.active-title {
     border-radius: 3px;
-    padding: 12px 31px;
     background-color: #f80;
     border: 1px solid #f80;
     color: #fff;

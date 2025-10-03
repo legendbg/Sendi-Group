@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.css">
         <link rel="stylesheet" href="css/main.css" />
         <title>Sendi Group</title>
     </head>
 
     <body>
         <div class="wrap">
-            <!-- <div class="feedback-popup">
+            <div class="feedback-popup">
                 <div class="feedback-popup__content">
                     <div class="feedback-popup__cross">
-                        <img src="./images/icons/popup-cross.svg" alt="">
+                        <img src="./images/icons/popup-cross.svg" alt="" />
                     </div>
                     <div class="feedback-popup__title">Готові <span>обговорити проєкт?</span></div>
                     <div class="feedback-popup__texts">
@@ -21,25 +22,26 @@
                         <p class="feedback-popup__text"><span>БЕЗКОШТОВНУ</span> консультацію і сформує</p>
                         <p class="feedback-popup__text bold orange">найбільш вигідну та ефективну пропозицію.</p>
                     </div>
-                    <form action="" class="feedback-popup__form form-popup">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="feedback-popup__form form-popup">
+                        <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d">
                         <div class="form-popup__fields">
                             <div class="form-popup__field">
                                 <label for="" class="form-popup__label">Ваше ім’я <span class="orange">*</span></label>
-                                <input type="text" class="form-popup__input" placeholder="Введіть Ваше ім’я" />
+                                <input type="text" class="form-popup__input" placeholder="Введіть Ваше ім’я" required name="name" />
                             </div>
                             <div class="form-popup__field">
                                 <label for="" class="form-popup__label">Ваш номер телефону <span class="orange">*</span></label>
-                                <input type="text" class="form-popup__input" placeholder="(99) 999-99-99" />
+                                <input type="text" class="form-popup__input popup-phone" placeholder="(99) 999-99-99" required name="phone" />
                             </div>
                             <div class="form-popup__field">
                                 <label for="" class="form-popup__label">Відправте нам повідомлення (необов’язково)</label>
-                                <textarea name="" id="" class="form-popup__textarea" placeholder="Ваше повідомлення"></textarea> 
+                                <textarea name="message" id="" class="form-popup__textarea" placeholder="Ваше повідомлення"></textarea>
                             </div>
                         </div>
                         <button class="form-popup__button">зАЛИШИТИ ЗАЯВКУ</button>
                     </form>
                 </div>
-            </div> -->
+            </div>
             <!-- <div class="good-popup">
                 <div class="good-popup__content">
                     <div class="good-popup__cross">
@@ -120,13 +122,13 @@
                         </div>
                         <nav class="header__nav">
                             <ul class="header__list">
-                                <li><a href="" class="header__link">Про нас</a></li>
-                                <li><a href="" class="header__link link-products">Продукція</a></li>
-                                <li><a href="" class="header__link link-products">Послуги</a></li>
-                                <li><a href="" class="header__link">Про нас</a></li>
-                                <li><a href="" class="header__link">Відгуки</a></li>
-                                <li><a href="" class="header__link">Етапи роботи</a></li>
-                                <li><a href="" class="header__link">Часті питання</a></li>
+                                <li><a href="" class="header__link link-header" id="who">Про нас</a></li>
+                                <li><a href="" class="header__link link-products" data-menu="products">Продукція</a></li>
+                                <li><a href="" class="header__link link-products" data-menu="services">Послуги</a></li>
+                                <li><a href="" class="header__link link-header" id="who">Про нас</a></li>
+                                <li><a href="" class="header__link link-header" id="works">Відгуки</a></li>
+                                <li><a href="" class="header__link link-header" id="steps">Етапи роботи</a></li>
+                                <li><a href="" class="header__link link-header" id="contacts">Часті питання</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -137,7 +139,7 @@
                             </div>
                             <div class="header__number">+38 (093) 673-93-93</div>
                         </div>
-                        <div class="header__button">
+                        <div class="header__button contact-popup-button">
                             <div class="header__button-link">ЗВ’ЯЗАТИСя З НАМИ</div>
                             <div class="header__button-arrow">
                                 <img src="./images/icons/black-arrow.svg" alt="" />
@@ -146,6 +148,340 @@
                     </div>
                 </div>
             </header>
+            <div class="menu" data-menu="products">
+                <div class="menu__container _container">
+                    <div class="menu__name">Продукція</div>
+                    <div class="menu__content">
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Суверіна продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
+                                    <li><a href="" class="item-menu__link">Значкі</a></li>
+                                    <li><a href="" class="item-menu__link">Надувні шари</a></li>
+                                    <li><a href="" class="item-menu__link">Мульти-титули</a></li>
+                                    <li><a href="" class="item-menu__link">Зонти</a></li>
+                                    <li><a href="" class="item-menu__link">Посуд з логотипом</a></li>
+                                    <li><a href="" class="item-menu__link">Піни</a></li>
+                                    <li><a href="" class="item-menu__link">Рушники</a></li>
+                                    <li><a href="" class="item-menu__link">Світловідбиваючі браслети</a></li>
+                                    <li><a href="" class="item-menu__link">Силіконові браслети</a></li>
+                                    <li><a href="" class="item-menu__link">Чашки</a></li>
+                                    <li><a href="" class="item-menu__link">Шнурки для бейджей</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Сумки</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Бананки</a></li>
+                                    <li><a href="" class="item-menu__link">Спортивні чи дорожні </a></li>
+                                    <li><a href="" class="item-menu__link">Рюкзаки</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Електроніка</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Bluetooth колонки</a></li>
+                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
+                                    <li><a href="" class="item-menu__link">Значкі</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Подорожі та відпочинок</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Валізи</a></li>
+                                    <li><a href="" class="item-menu__link">Ланчбокси</a></li>
+                                    <li><a href="" class="item-menu__link">Пледи</a></li>
+                                    <li><a href="" class="item-menu__link">Пляшка для води</a></li>
+                                    <li><a href="" class="item-menu__link">Подушка для подорожей</a></li>
+                                    <li><a href="" class="item-menu__link">Термопляшки</a></li>
+                                    <li><a href="" class="item-menu__link">Термоси</a></li>
+                                    <li><a href="" class="item-menu__link">Термосумки</a></li>
+                                    <li><a href="" class="item-menu__link">Термочашки</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Еко - продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">ЕКО блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">ЕКО ручки і олівці</a></li>
+                                    <li><a href="" class="item-menu__link">ЕКО сумки</a></li>
+                                    <li><a href="" class="item-menu__link">Ланчбокси бамбукові</a></li>
+                                    <li><a href="" class="item-menu__link">Чашки бамбукові</a></li>
+                                    <li><a href="" class="item-menu__link">Пакети з крафту</a></li>
+                                    <li><a href="" class="item-menu__link">Фашки дерев’яні</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Поліграфічна продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Афіши та плакати</a></li>
+                                    <li><a href="" class="item-menu__link">Бланки</a></li>
+                                    <li><a href="" class="item-menu__link">Блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">Візитки</a></li>
+                                    <li><a href="" class="item-menu__link">Грамоти та сертифікати</a></li>
+                                    <li><a href="" class="item-menu__link">Запрошення</a></li>
+                                    <li><a href="" class="item-menu__link">Білети</a></li>
+                                    <li><a href="" class="item-menu__link">Листівки</a></li>
+                                    <li><a href="" class="item-menu__link">Меню</a></li>
+                                    <li><a href="" class="item-menu__link">Наліпки та стікери</a></li>
+                                    <li><a href="" class="item-menu__link">Об’ємні наліпки</a></li>
+                                    <li><a href="" class="item-menu__link">Скотч з логотипом</a></li>
+                                    <li><a href="" class="item-menu__link">Стікерпаки</a></li>
+                                    <li><a href="" class="item-menu__link">Флаєри та буклети</a></li>
+                                    <li><a href="" class="item-menu__link">Щоденники</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Пакети та упакова</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Коробки</a></li>
+                                    <li><a href="" class="item-menu__link">Паперові пакети</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Промо - одяг</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Бомбери</a></li>
+                                    <li><a href="" class="item-menu__link">Дитячі футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Жилетки</a></li>
+                                    <li><a href="" class="item-menu__link">Кепки</a></li>
+                                    <li><a href="" class="item-menu__link">Куртки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки з довгим рукавом</a></li>
+                                    <li><a href="" class="item-menu__link">Світшоти</a></li>
+                                    <li><a href="" class="item-menu__link">Сорочки</a></li>
+                                    <li><a href="" class="item-menu__link">Спортивні футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки “поло”</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки з V-вирізом</a></li>
+                                    <li><a href="" class="item-menu__link">Фліси</a></li>
+                                    <li><a href="" class="item-menu__link">Худі</a></li>
+                                    <li><a href="" class="item-menu__link">Шапки</a></li>
+                                    <li><a href="" class="item-menu__link">Шкарпетки</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Канцелярія</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Календарі</a></li>
+                                    <li><a href="" class="item-menu__link">Кубарики</a></li>
+                                    <li><a href="" class="item-menu__link">Папки</a></li>
+                                    <li><a href="" class="item-menu__link">Ручки та олівці</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Кухонні аксусуари</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Фастери</a></li>
+                                    <li><a href="" class="item-menu__link">Фартухи</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Корпоративні подарунки</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
+                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
+                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Каталоги</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
+                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
+                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu" data-menu="services">
+                <div class="menu__container _container">
+                    <div class="menu__name">Послуги</div>
+                    <div class="menu__content">
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Суверіна продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
+                                    <li><a href="" class="item-menu__link">Значкі</a></li>
+                                    <li><a href="" class="item-menu__link">Надувні шари</a></li>
+                                    <li><a href="" class="item-menu__link">Мульти-титули</a></li>
+                                    <li><a href="" class="item-menu__link">Зонти</a></li>
+                                    <li><a href="" class="item-menu__link">Посуд з логотипом</a></li>
+                                    <li><a href="" class="item-menu__link">Піни</a></li>
+                                    <li><a href="" class="item-menu__link">Рушники</a></li>
+                                    <li><a href="" class="item-menu__link">Світловідбиваючі браслети</a></li>
+                                    <li><a href="" class="item-menu__link">Силіконові браслети</a></li>
+                                    <li><a href="" class="item-menu__link">Чашки</a></li>
+                                    <li><a href="" class="item-menu__link">Шнурки для бейджей</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Сумки</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Бананки</a></li>
+                                    <li><a href="" class="item-menu__link">Спортивні чи дорожні </a></li>
+                                    <li><a href="" class="item-menu__link">Рюкзаки</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Електроніка</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Bluetooth колонки</a></li>
+                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
+                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
+                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
+                                    <li><a href="" class="item-menu__link">Значкі</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Подорожі та відпочинок</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Валізи</a></li>
+                                    <li><a href="" class="item-menu__link">Ланчбокси</a></li>
+                                    <li><a href="" class="item-menu__link">Пледи</a></li>
+                                    <li><a href="" class="item-menu__link">Пляшка для води</a></li>
+                                    <li><a href="" class="item-menu__link">Подушка для подорожей</a></li>
+                                    <li><a href="" class="item-menu__link">Термопляшки</a></li>
+                                    <li><a href="" class="item-menu__link">Термоси</a></li>
+                                    <li><a href="" class="item-menu__link">Термосумки</a></li>
+                                    <li><a href="" class="item-menu__link">Термочашки</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Еко - продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">ЕКО блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">ЕКО ручки і олівці</a></li>
+                                    <li><a href="" class="item-menu__link">ЕКО сумки</a></li>
+                                    <li><a href="" class="item-menu__link">Ланчбокси бамбукові</a></li>
+                                    <li><a href="" class="item-menu__link">Чашки бамбукові</a></li>
+                                    <li><a href="" class="item-menu__link">Пакети з крафту</a></li>
+                                    <li><a href="" class="item-menu__link">Фашки дерев’яні</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Поліграфічна продукція</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Афіши та плакати</a></li>
+                                    <li><a href="" class="item-menu__link">Бланки</a></li>
+                                    <li><a href="" class="item-menu__link">Блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">Візитки</a></li>
+                                    <li><a href="" class="item-menu__link">Грамоти та сертифікати</a></li>
+                                    <li><a href="" class="item-menu__link">Запрошення</a></li>
+                                    <li><a href="" class="item-menu__link">Білети</a></li>
+                                    <li><a href="" class="item-menu__link">Листівки</a></li>
+                                    <li><a href="" class="item-menu__link">Меню</a></li>
+                                    <li><a href="" class="item-menu__link">Наліпки та стікери</a></li>
+                                    <li><a href="" class="item-menu__link">Об’ємні наліпки</a></li>
+                                    <li><a href="" class="item-menu__link">Скотч з логотипом</a></li>
+                                    <li><a href="" class="item-menu__link">Стікерпаки</a></li>
+                                    <li><a href="" class="item-menu__link">Флаєри та буклети</a></li>
+                                    <li><a href="" class="item-menu__link">Щоденники</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Пакети та упакова</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Коробки</a></li>
+                                    <li><a href="" class="item-menu__link">Паперові пакети</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Промо - одяг</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Бомбери</a></li>
+                                    <li><a href="" class="item-menu__link">Дитячі футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Жилетки</a></li>
+                                    <li><a href="" class="item-menu__link">Кепки</a></li>
+                                    <li><a href="" class="item-menu__link">Куртки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки з довгим рукавом</a></li>
+                                    <li><a href="" class="item-menu__link">Світшоти</a></li>
+                                    <li><a href="" class="item-menu__link">Сорочки</a></li>
+                                    <li><a href="" class="item-menu__link">Спортивні футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки “поло”</a></li>
+                                    <li><a href="" class="item-menu__link">Футболки з V-вирізом</a></li>
+                                    <li><a href="" class="item-menu__link">Фліси</a></li>
+                                    <li><a href="" class="item-menu__link">Худі</a></li>
+                                    <li><a href="" class="item-menu__link">Шапки</a></li>
+                                    <li><a href="" class="item-menu__link">Шкарпетки</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Канцелярія</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Календарі</a></li>
+                                    <li><a href="" class="item-menu__link">Кубарики</a></li>
+                                    <li><a href="" class="item-menu__link">Папки</a></li>
+                                    <li><a href="" class="item-menu__link">Ручки та олівці</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu__row">
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Кухонні аксусуари</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Фастери</a></li>
+                                    <li><a href="" class="item-menu__link">Фартухи</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Корпоративні подарунки</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
+                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
+                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu__item item-menu">
+                                <div class="item-menu__name">Каталоги</div>
+                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
+                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
+                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
+                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <main class="main">
                 <section class="home">
                     <div class="home__container _container">
@@ -160,8 +496,8 @@
                                     </h1>
                                     <p class="home__text">
                                         Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб. Допомагаємо
-                                        підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну продукцію з нанесенням
-                                        брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
+                                        підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну продукцію з
+                                        нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
                                     </p>
                                 </div>
                             </div>
@@ -171,13 +507,13 @@
                         </div>
                         <div class="home__main">
                             <div class="home__buttons">
-                                <div class="home__button-black button-black">
+                                <div class="home__button-black button-black contact-popup-button">
                                     <div class="button-black__text">Отримати консультацію</div>
                                     <div class="button-black__icon">
                                         <img src="./images/icons/white-arrow.svg" alt="" />
                                     </div>
                                 </div>
-                                <div class="home__button-white button-white">
+                                <div class="home__button-white button-white contact-popup-button">
                                     <div class="button-white__text">Приклади робіт</div>
                                     <div class="button-white__icon">
                                         <img src="./images/icons/orange-arrow.svg" alt="" />
@@ -197,89 +533,375 @@
                     </div>
                 </section>
                 <section class="goods">
-                    <div class="goods__container _container">
+                    <div class="goods__container _container tabs-container">
                         <div class="goods__title title">
                             <div class="title__line"></div>
                             <h2 class="title__text"><span class="bold">Брендована продукція</span> яку ми робимо</h2>
                         </div>
                         <div class="goods__tabs">
-                            <div class="goods__tab active-tab">Усі</div>
-                            <div class="goods__tab">Поліграфія</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
-                            <div class="goods__tab">Категорія 3</div>
+                            <div class="goods__tab tab-title active-title" data-tab="1">Усі</div>
+                            <div class="goods__tab tab-title" data-tab="2">Поліграфія</div>
                         </div>
-                        <div class="goods__content">
+                        <div class="goods__content tab-content active-tab" data-tab="1">
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="goods__main good-popups-button" popup-data="popup-1">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
+                                <div class="good-popup" popup-data="popup-1">
+                                    <div class="good-popup__content">
+                                        <div class="good-popup__cross">
+                                            <img src="./images/icons/popup-cross.svg" alt="" />
+                                        </div>
+                                        <div class="good-popup__image">
+                                            <img src="./images/shirt.png" alt="" />
+                                        </div>
+                                        <div class="good-popup__info">
+                                            <div class="good-popup__title">Яскраві спортивні футболки з принтом для компанії «Neogames»1</div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__desc">Опис</div>
+                                            <div class="good-popup__texts">
+                                                <p class="good-popup__text">
+                                                    Жителі довго чекали на цю подію, і ось нарешті їх мрії збулися! У місті відкрився новий сучасний
+                                                    парк, який стане улюбленим місцем відпочинку для дітей та дорослих
+                                                </p>
+                                                <p class="good-popup__text">
+                                                    На відкритті парку були присутні гості. Вони привітали жителів міста з цією важливою подією та
+                                                    побажали їм приємного відпочинку у новому парку
+                                                </p>
+                                            </div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__price">Від 2000 грн</div>
+                                            <div class="good-popup__line"></div>
+                                            <p class="good-popup__subtext">
+                                                *Ціна залежить від розміру, матеріалу, якості друку, тиражу та складності дизайну.
+                                            </p>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__button">
+                                                <div class="good-popup__button-text">зАМОВИТИ Прорахунок</div>
+                                                <div class="good-popup__button-icon">
+                                                    <img src="./images/icons/popup-arrow.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="good-popup__share share-good">
+                                                <div class="share-good__text">Поділитись товаром :</div>
+                                                <div class="share-good__icons">
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/copy.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-facebook.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-twitter.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-pinterest.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="goods__main good-popups-button" popup-data="popup-2">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 3.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
+                                <div class="good-popup" popup-data="popup-2">
+                                    <div class="good-popup__content">
+                                        <div class="good-popup__cross">
+                                            <img src="./images/icons/popup-cross.svg" alt="" />
+                                        </div>
+                                        <div class="good-popup__image">
+                                            <img src="./images/shirt.png" alt="" />
+                                        </div>
+                                        <div class="good-popup__info">
+                                            <div class="good-popup__title">Яскраві спортивні футболки з принтом для компанії «Neogames»2</div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__desc">Опис</div>
+                                            <div class="good-popup__texts">
+                                                <p class="good-popup__text">
+                                                    Жителі довго чекали на цю подію, і ось нарешті їх мрії збулися! У місті відкрився новий сучасний
+                                                    парк, який стане улюбленим місцем відпочинку для дітей та дорослих
+                                                </p>
+                                                <p class="good-popup__text">
+                                                    На відкритті парку були присутні гості. Вони привітали жителів міста з цією важливою подією та
+                                                    побажали їм приємного відпочинку у новому парку
+                                                </p>
+                                            </div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__price">Від 2000 грн</div>
+                                            <div class="good-popup__line"></div>
+                                            <p class="good-popup__subtext">
+                                                *Ціна залежить від розміру, матеріалу, якості друку, тиражу та складності дизайну.
+                                            </p>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__button">
+                                                <div class="good-popup__button-text">зАМОВИТИ Прорахунок</div>
+                                                <div class="good-popup__button-icon">
+                                                    <img src="./images/icons/popup-arrow.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="good-popup__share share-good">
+                                                <div class="share-good__text">Поділитись товаром :</div>
+                                                <div class="share-good__icons">
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/copy.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-facebook.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-twitter.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-pinterest.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
                             </div>
                             <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
                                 </div>
-                                <div class="goods__name">Lorem Ipsum 2.0</div>
+                            </div>
+                        </div>
+                        <div class="goods__content tab-content" data-tab="2">
+                            <div class="goods__item">
+                                <div class="goods__main good-popups-button" popup-data="popup-1">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 90.0</div>
+                                </div>
+                                <div class="good-popup" popup-data="popup-1">
+                                    <div class="good-popup__content">
+                                        <div class="good-popup__cross">
+                                            <img src="./images/icons/popup-cross.svg" alt="" />
+                                        </div>
+                                        <div class="good-popup__image">
+                                            <img src="./images/shirt.png" alt="" />
+                                        </div>
+                                        <div class="good-popup__info">
+                                            <div class="good-popup__title">Яскраві спортивні футболки з принтом для компанії «Neogames»1</div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__desc">Опис</div>
+                                            <div class="good-popup__texts">
+                                                <p class="good-popup__text">
+                                                    Жителі довго чекали на цю подію, і ось нарешті їх мрії збулися! У місті відкрився новий сучасний
+                                                    парк, який стане улюбленим місцем відпочинку для дітей та дорослих
+                                                </p>
+                                                <p class="good-popup__text">
+                                                    На відкритті парку були присутні гості. Вони привітали жителів міста з цією важливою подією та
+                                                    побажали їм приємного відпочинку у новому парку
+                                                </p>
+                                            </div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__price">Від 2000 грн</div>
+                                            <div class="good-popup__line"></div>
+                                            <p class="good-popup__subtext">
+                                                *Ціна залежить від розміру, матеріалу, якості друку, тиражу та складності дизайну.
+                                            </p>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__button">
+                                                <div class="good-popup__button-text">зАМОВИТИ Прорахунок</div>
+                                                <div class="good-popup__button-icon">
+                                                    <img src="./images/icons/popup-arrow.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="good-popup__share share-good">
+                                                <div class="share-good__text">Поділитись товаром :</div>
+                                                <div class="share-good__icons">
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/copy.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-facebook.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-twitter.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-pinterest.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="goods__main good-popups-button" popup-data="popup-2">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 3.0</div>
+                                </div>
+                                <div class="good-popup" popup-data="popup-2">
+                                    <div class="good-popup__content">
+                                        <div class="good-popup__cross">
+                                            <img src="./images/icons/popup-cross.svg" alt="" />
+                                        </div>
+                                        <div class="good-popup__image">
+                                            <img src="./images/shirt.png" alt="" />
+                                        </div>
+                                        <div class="good-popup__info">
+                                            <div class="good-popup__title">Яскраві спортивні футболки з принтом для компанії «Neogames»2</div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__desc">Опис</div>
+                                            <div class="good-popup__texts">
+                                                <p class="good-popup__text">
+                                                    Жителі довго чекали на цю подію, і ось нарешті їх мрії збулися! У місті відкрився новий сучасний
+                                                    парк, який стане улюбленим місцем відпочинку для дітей та дорослих
+                                                </p>
+                                                <p class="good-popup__text">
+                                                    На відкритті парку були присутні гості. Вони привітали жителів міста з цією важливою подією та
+                                                    побажали їм приємного відпочинку у новому парку
+                                                </p>
+                                            </div>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__price">Від 2000 грн</div>
+                                            <div class="good-popup__line"></div>
+                                            <p class="good-popup__subtext">
+                                                *Ціна залежить від розміру, матеріалу, якості друку, тиражу та складності дизайну.
+                                            </p>
+                                            <div class="good-popup__line"></div>
+                                            <div class="good-popup__button">
+                                                <div class="good-popup__button-text">зАМОВИТИ Прорахунок</div>
+                                                <div class="good-popup__button-icon">
+                                                    <img src="./images/icons/popup-arrow.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="good-popup__share share-good">
+                                                <div class="share-good__text">Поділитись товаром :</div>
+                                                <div class="share-good__icons">
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/copy.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-facebook.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-twitter.svg" alt="" />
+                                                    </div>
+                                                    <div class="share-good__icon">
+                                                        <img src="./images/icons/popup-pinterest.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
+                            </div>
+                            <div class="goods__item">
+                                <div class="good__main">
+                                    <div class="goods__image">
+                                        <img src="./images/good.png" alt="" />
+                                    </div>
+                                    <div class="goods__name">Lorem Ipsum 2.0</div>
+                                </div>
                             </div>
                         </div>
                         <div class="goods__buttons">
-                            <div class="works__button-white button-white">
+                            <div class="works__button-white button-white contact-popup-button">
                                 <div class="button-white__text">Замовити послугу</div>
                                 <div class="button-white__icon">
                                     <img src="./images/icons/orange-arrow.svg" alt="" />
                                 </div>
                             </div>
-                            <div class="works__button-black button-black">
+                            <div class="works__button-black button-black contact-popup-button">
                                 <div class="button-black__text">Отримати консультацію</div>
                                 <div class="button-black__icon">
                                     <img src="./images/icons/white-arrow.svg" alt="" />
@@ -289,37 +911,35 @@
                     </div>
                 </section>
                 <section class="products">
-                    <div class="products__container _container">
+                    <div class="products__container _container tabs-container">
                         <div class="products__title title">
                             <div class="title__line"></div>
                             <h2 class="title__text"><span class="bold">Послуги</span> що ми надаємо</h2>
                         </div>
                         <div class="products__tabs">
                             <div class="products__tab-content">
-                                <div class="products__tab active-tab">Усі</div>
-                                <div class="products__tab">Послуги дизайну</div>
-                                <div class="products__tab">Розробка сайтів</div>
-                                <div class="products__tab">Ведення соц.мереж</div>
+                                <div class="products__tab tab-title active-title" data-tab="1.1">Усі</div>
+                                <div class="products__tab tab-title" data-tab="1.2">Послуги дизайну</div>
+                                <div class="products__tab tab-title" data-tab="1.3">Розробка сайтів</div>
+                                <div class="products__tab tab-title" data-tab="1.4">Ведення соц.мереж</div>
                             </div>
-                            <div class="products__tab-content">
-                                <div class="products__tab active-tab">Усі</div>
-                                <div class="products__tab">Поліграфія</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
-                                <div class="products__tab">Категорія 3</div>
+                            <div class="tabs-container">
+                                <div class="products__tab-content tab-subtab tab-content active-tab" data-tab="1.1">
+                                    <div class="products__tab tab-title active-title">Усі1</div>
+                                    <div class="products__tab tab-title">Поліграфія1</div>
+                                </div>
+                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.2">
+                                    <div class="products__tab tab-title active-title">Усі2</div>
+                                    <div class="products__tab tab-title">Поліграфія2</div>
+                                </div>
+                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.3">
+                                    <div class="products__tab tab-title active-title">Усі3</div>
+                                    <div class="products__tab tab-title">Поліграфія3</div>
+                                </div>
+                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.4">
+                                    <div class="products__tab tab-title active-title">Усі4</div>
+                                    <div class="products__tab tab-title">Поліграфія4</div>
+                                </div>
                             </div>
                         </div>
                         <div class="products__content">
@@ -425,13 +1045,13 @@
                                 </div>
                             </div>
                             <div class="who__buttons">
-                                <div class="works__button-white button-white">
+                                <div class="works__button-white button-white contact-popup-button">
                                     <div class="button-white__text">Замовити послугу</div>
                                     <div class="button-white__icon">
                                         <img src="./images/icons/orange-arrow.svg" alt="" />
                                     </div>
                                 </div>
-                                <div class="works__button-black button-black">
+                                <div class="works__button-black button-black contact-popup-button">
                                     <div class="button-black__text">Отримати консультацію</div>
                                     <div class="button-black__icon">
                                         <img src="./images/icons/white-arrow.svg" alt="" />
@@ -505,13 +1125,13 @@
                             </div>
                         </div>
                         <div class="works__buttons">
-                            <div class="works__button-white button-white">
+                            <div class="works__button-white button-white contact-popup-button">
                                 <div class="button-white__text">Замовити послугу</div>
                                 <div class="button-white__icon">
                                     <img src="./images/icons/orange-arrow.svg" alt="" />
                                 </div>
                             </div>
-                            <div class="works__button-black button-black">
+                            <div class="works__button-black button-black contact-popup-button">
                                 <div class="button-black__text">Отримати консультацію</div>
                                 <div class="button-black__icon">
                                     <img src="./images/icons/white-arrow.svg" alt="" />
@@ -643,28 +1263,29 @@
                             <h2 class="title__text">Готові <span class="bold">обговорити проєкт?</span></h2>
                         </div>
                         <div class="contacts__content">
-                            <form action="" class="contacts__form">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d">
                                 <div class="contacts__fields">
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваше ім’я <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input" placeholder="Введіть Ваше ім’я" />
+                                        <input type="text" class="contacts__input" placeholder="Введіть Ваше ім’я" required name="name" />
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваш номер телефону <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input" placeholder="+380 (99) 999-99-99" />
+                                        <input type="text" class="contacts__input contact-phone" placeholder="+380 (99) 999-99-99" required name="phone" />
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваш e-mail <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" />
+                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" readonly name="email" />
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Назва бренду, компанії <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" />
+                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" required name="brand"/>
                                     </div>
                                 </div>
                                 <div class="contacts__message">
                                     <div class="contacts__label">Відправте нам повідомлення (необов’язково)</div>
-                                    <textarea name="" id="" class="contacts__textarea" placeholder="Ваше повідомлення "></textarea>
+                                    <textarea name="Message: " id="" class="contacts__textarea" placeholder="Ваше повідомлення "></textarea>
                                 </div>
                                 <button class="contacts__button">
                                     <div class="contacts__button-text">зАЛИШИТИ ЗАЯВКУ</div>
@@ -877,4 +1498,11 @@
             </footer>
         </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/js/intlTelInput.min.js"></script>
+    <script src="./js/contactsPopup.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/goodsPopup.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/telInput.js"></script>
 </html>

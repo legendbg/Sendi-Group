@@ -1,0 +1,76 @@
+.menu {
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 82px;
+    background-color: #f7f7f7;
+    z-index: 100;
+    padding: 20px 30px 50px 30px;
+
+    &.show {
+        display: block;
+    }
+
+    &__container {
+        margin-left: -12px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 118%;
+        color: #000;
+        margin-bottom: 26px;
+        font-family: "Gilroy-SemiBold", sans-serif;
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.item-menu {
+    &__name {
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 18px;
+        line-height: 144%;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #000;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &::after {
+            content: "";
+            background: url("../../images/icons/orange-arrow.svg") 0 0 no-repeat;
+            display: block;
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__links {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__link {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 162%;
+        color: #000;
+    }
+}

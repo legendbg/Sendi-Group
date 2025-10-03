@@ -25,13 +25,13 @@
     border-radius: 3px;
     padding: 12px 13px;
     color: #282828;
+    padding: 12px 31px;
 }
 
-.active-tab {
+.active-title {
     border-radius: 3px;
-    padding: 12px 31px;
-    background-color: #f80;
-    border: 1px solid #f80;
+    background-color: #f80 !important;
+    border: 1px solid #f80 !important;
     color: #fff;
 }
 
@@ -40,6 +40,11 @@
     gap: 25px;
     flex-wrap: wrap;
     margin-bottom: 35px;
+    display: none;
+}
+
+.active-tab {
+    display: flex;
 }
 
 .goods__item {

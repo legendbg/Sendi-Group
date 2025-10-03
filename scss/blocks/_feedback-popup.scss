@@ -5,7 +5,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
@@ -69,6 +69,10 @@
     &__field {
         &:not(:last-child) {
             margin-bottom: 15px;
+        }
+
+        .iti {
+            width: 100%;
         }
     }
 
@@ -141,4 +145,8 @@
             height: 15px;
         }
     }
+}
+
+.feedback-popup.show {
+    display: flex;
 }

@@ -87,10 +87,14 @@
     gap: 5px;
 
     &::after {
-        content: '';
+        content: "";
         display: block;
         width: 7px;
         height: 7px;
         background: url("../images/icons/link-plis.svg") 0 0 no-repeat;
+    }
+
+    &.active {
+        text-decoration: underline;
     }
 }
