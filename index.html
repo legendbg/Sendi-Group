@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.css" />
         <link rel="stylesheet" href="css/main.css" />
         <title>Sendi Group</title>
     </head>
@@ -16,14 +17,13 @@
                         <img src="./images/icons/popup-cross.svg" alt="" />
                     </div>
                     <div class="feedback-popup__title">Готові <span>обговорити проєкт?</span></div>
-                    <div class="feedback-popup__texts">
-                        <p class="feedback-popup__text">Заповніть коротку форму, наш менеджер зв’яжеться з Вами</p>
-                        <p class="feedback-popup__text">будь-яким зручним для Вас способом та надасть</p>
-                        <p class="feedback-popup__text"><span>БЕЗКОШТОВНУ</span> консультацію і сформує</p>
-                        <p class="feedback-popup__text bold orange">найбільш вигідну та ефективну пропозицію.</p>
+                    <div class="feedback-popup__text">
+                        Заповніть коротку форму, наш менеджер зв’яжеться з Вами будь-яким зручним для Вас способом та надасть 
+                        <span class="bold">БЕЗКОШТОВНУ</span> консультацію
+                        і сформує <span class="orange">найбільш вигідну та ефективну пропозицію.</span>
                     </div>
                     <form action="https://api.web3forms.com/submit" method="POST" class="feedback-popup__form form-popup">
-                        <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d">
+                        <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d" />
                         <div class="form-popup__fields">
                             <div class="form-popup__field">
                                 <label for="" class="form-popup__label">Ваше ім’я <span class="orange">*</span></label>
@@ -42,59 +42,6 @@
                     </form>
                 </div>
             </div>
-            <!-- <div class="good-popup">
-                <div class="good-popup__content">
-                    <div class="good-popup__cross">
-                        <img src="./images/icons/popup-cross.svg" alt="" />
-                    </div>
-                    <div class="good-popup__image">
-                        <img src="./images/shirt.png" alt="" />
-                    </div>
-                    <div class="good-popup__info">
-                        <div class="good-popup__title">Яскраві спортивні футболки з принтом для компанії «Neogames»</div>
-                        <div class="good-popup__line"></div>
-                        <div class="good-popup__desc">Опис</div>
-                        <div class="good-popup__texts">
-                            <p class="good-popup__text">
-                                Жителі довго чекали на цю подію, і ось нарешті їх мрії збулися! У місті відкрився новий сучасний парк, який стане
-                                улюбленим місцем відпочинку для дітей та дорослих
-                            </p>
-                            <p class="good-popup__text">
-                                На відкритті парку були присутні гості. Вони привітали жителів міста з цією важливою подією та побажали їм приємного
-                                відпочинку у новому парку
-                            </p>
-                        </div>
-                        <div class="good-popup__line"></div>
-                        <div class="good-popup__price">Від 2000 грн</div>
-                        <div class="good-popup__line"></div>
-                        <p class="good-popup__subtext">*Ціна залежить від розміру, матеріалу, якості друку, тиражу та складності дизайну.</p>
-                        <div class="good-popup__line"></div>
-                        <div class="good-popup__button">
-                            <div class="good-popup__button-text">зАМОВИТИ Прорахунок</div>
-                            <div class="good-popup__button-icon">
-                                <img src="./images/icons/popup-arrow.svg" alt="" />
-                            </div>
-                        </div>
-                        <div class="good-popup__share share-good">
-                            <div class="share-good__text">Поділитись товаром : </div>
-                            <div class="share-good__icons">
-                                <div class="share-good__icon">
-                                    <img src="./images/icons/copy.svg" alt="" />
-                                </div>
-                                <div class="share-good__icon">
-                                    <img src="./images/icons/popup-facebook.svg" alt="" />
-                                </div>
-                                <div class="share-good__icon">
-                                    <img src="./images/icons/popup-twitter.svg" alt="" />
-                                </div>
-                                <div class="share-good__icon">
-                                    <img src="./images/icons/popup-pinterest.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="sidebar">
                 <div class="sidebar__content">
                     <div class="sidebar__links">
@@ -148,7 +95,7 @@
                     </div>
                 </div>
             </header>
-            <div class="menu" data-menu="products">
+            <!-- <div class="menu" data-menu="products">
                 <div class="menu__container _container">
                     <div class="menu__name">Продукція</div>
                     <div class="menu__content">
@@ -314,8 +261,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="menu" data-menu="services">
+            </div> -->
+            <!-- <div class="menu" data-menu="services">
                 <div class="menu__container _container">
                     <div class="menu__name">Послуги</div>
                     <div class="menu__content">
@@ -481,29 +428,94 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <main class="main">
                 <section class="home">
                     <div class="home__container _container">
-                        <div class="home__content">
-                            <div class="home__texts">
-                                <div class="home__line"></div>
-                                <div class="home__info">
-                                    <p class="home__uptext">Рекламна агенція</p>
-                                    <h1 class="home__title">
-                                        Надійний постачальник <span class="orange bold">рекламної корпоративної</span>
-                                        <span class="bold">брендованої продукції</span>
-                                    </h1>
-                                    <p class="home__text">
-                                        Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб. Допомагаємо
-                                        підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну продукцію з
-                                        нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
-                                    </p>
+                        <div class="home__slider home-slider swiper">
+                            <div class="home__wrapper swiper-wrapper">
+                                <div class="home__content swiper-slide">
+                                    <div class="home__texts">
+                                        <div class="home__line"></div>
+                                        <div class="home__info">
+                                            <p class="home__uptext">Рекламна агенція</p>
+                                            <h1 class="home__title">
+                                                Надійний постачальник <span class="orange bold">рекламної корпоративної</span>
+                                                <span class="bold">брендованої продукції</span>
+                                            </h1>
+                                            <p class="home__text">
+                                                Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб.
+                                                Допомагаємо підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну
+                                                продукцію з нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home__image">
+                                        <img src="./images/bags.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="home__content swiper-slide">
+                                    <div class="home__texts">
+                                        <div class="home__line"></div>
+                                        <div class="home__info">
+                                            <p class="home__uptext">Рекламна агенція</p>
+                                            <h1 class="home__title">
+                                                Надійний постачальник <span class="orange bold">рекламної корпоративної</span>
+                                                <span class="bold">брендованої продукції</span>
+                                            </h1>
+                                            <p class="home__text">
+                                                Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб.
+                                                Допомагаємо підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну
+                                                продукцію з нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home__image">
+                                        <img src="./images/bags.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="home__content swiper-slide">
+                                    <div class="home__texts">
+                                        <div class="home__line"></div>
+                                        <div class="home__info">
+                                            <p class="home__uptext">Рекламна агенція</p>
+                                            <h1 class="home__title">
+                                                Надійний постачальник <span class="orange bold">рекламної корпоративної</span>
+                                                <span class="bold">брендованої продукції</span>
+                                            </h1>
+                                            <p class="home__text">
+                                                Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб.
+                                                Допомагаємо підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну
+                                                продукцію з нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home__image">
+                                        <img src="./images/bags.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="home__content swiper-slide">
+                                    <div class="home__texts">
+                                        <div class="home__line"></div>
+                                        <div class="home__info">
+                                            <p class="home__uptext">Рекламна агенція</p>
+                                            <h1 class="home__title">
+                                                Надійний постачальник <span class="orange bold">рекламної корпоративної</span>
+                                                <span class="bold">брендованої продукції</span>
+                                            </h1>
+                                            <p class="home__text">
+                                                Ми забезпечуємо Ваш бізнес якісною брендованою продукцією, для рекламних та корпоративних потреб.
+                                                Допомагаємо підкреслити індивідуальність Вашого бренду через стильні подарунки, сувеніри та рекламну
+                                                продукцію з нанесенням брендування усіх видів. Працюємо під ключ — від ідеї до якісної реалізації.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="home__image">
+                                        <img src="./images/bags.png" alt="" />
+                                    </div>
                                 </div>
                             </div>
-                            <div class="home__image">
-                                <img src="./images/bags.png" alt="" />
-                            </div>
+                            <div class="home-pagination swiper-pagination"></div>
                         </div>
                         <div class="home__main">
                             <div class="home__buttons">
@@ -532,7 +544,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="goods">
+                <!-- <section class="goods">
                     <div class="goods__container _container tabs-container">
                         <div class="goods__title title">
                             <div class="title__line"></div>
@@ -909,8 +921,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="products">
+                </section> -->
+                <!-- <section class="products">
                     <div class="products__container _container tabs-container">
                         <div class="products__title title">
                             <div class="title__line"></div>
@@ -1007,14 +1019,29 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <section class="who">
                     <div class="who__container _container">
+                        <div class="who__title title who__title-mobile">
+                            <div class="title__line"></div>
+                            <h2 class="title__text"><span class="bold">Хто</span> ми і <span class="bold">про що?</span></h2>
+                        </div>
                         <div class="who__decor">
                             <img src="./images/circles.png" alt="" />
                         </div>
-                        <div class="who__image">
-                            <img src="./images/who.png" alt="" />
+                        <div class="who-slider swiper">
+                            <div class="who-wrapper swiper-wrapper">
+                                <div class="who__image swiper-slide">
+                                    <img src="./images/who.png" alt="" />
+                                </div>
+                                <div class="who__image swiper-slide">
+                                    <img src="./images/who.png" alt="" />
+                                </div>
+                                <div class="who__image swiper-slide">
+                                    <img src="./images/who.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="who-pagination"></div>
                         </div>
                         <div class="who__content">
                             <div class="who__title title">
@@ -1025,6 +1052,10 @@
                                 Ми — команда, яка допомагає Вашому бренду виглядати впевнено, звучати голосно та працювати ефективно. Об'єднуючи
                                 креатив, технології та досвід, ми створюємо цілісні рішення для бізнесу: від ідеї до втілення, від першого кроку до
                                 досягнення великих цілей. Наша сила — у комплексному підході: від дизайну до готового, працюючого бренду.
+                            </p>
+                            <p class="who__text who__text-mobile">
+                                Ми - команда професіоналів, яка допоможе вам перетворити вашу ідею на успішний стартап. Від розробки концепції до
+                                запуску продукту - ми будемо поруч на кожному етапі
                             </p>
                             <div class="who__blocks">
                                 <div class="who__block">
@@ -1064,64 +1095,83 @@
                 <section class="works">
                     <div class="works__container _container">
                         <h2 class="works__title">
-                            <span class="bold">Якість</span> нашої<span class="bold">роботи</span> може
+                            <span class="bold">Якість</span> нашої <span class="bold">роботи</span> може
                             <span class="bold">підтвердити ряд великих компаній</span>
                         </h2>
-                        <div class="works__content">
-                            <div class="works__item">
-                                <div class="works__decor">
-                                    <img src="./images/decor.png" alt="" />
+                        <div class="works__slides">
+                            <div class="works__content">
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
                                 </div>
-                                <div class="works__name">Анастасія Кролевець</div>
-                                <div class="works__subname">Разробка логотипу</div>
-                                <p class="works__text">
-                                    Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий дизайн,
-                                    який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції. Дякую!!!
-                                </p>
-                            </div>
-                            <div class="works__item">
-                                <div class="works__decor">
-                                    <img src="./images/decor.png" alt="" />
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
                                 </div>
-                                <div class="works__name">Анастасія Кролевець</div>
-                                <div class="works__subname">Разробка логотипу</div>
-                                <p class="works__text">
-                                    Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий дизайн,
-                                    який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції. Дякую!!!
-                                </p>
-                            </div>
-                            <div class="works__item">
-                                <div class="works__decor">
-                                    <img src="./images/decor.png" alt="" />
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
                                 </div>
-                                <div class="works__name">Анастасія Кролевець</div>
-                                <div class="works__subname">Разробка логотипу</div>
-                                <p class="works__text">
-                                    Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий дизайн,
-                                    який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції. Дякую!!!
-                                </p>
-                            </div>
-                            <div class="works__item">
-                                <div class="works__decor">
-                                    <img src="./images/decor.png" alt="" />
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
                                 </div>
-                                <div class="works__name">Анастасія Кролевець</div>
-                                <div class="works__subname">Разробка логотипу</div>
-                                <p class="works__text">
-                                    Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий дизайн,
-                                    який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції. Дякую!!!
-                                </p>
-                            </div>
-                            <div class="works__item">
-                                <div class="works__decor">
-                                    <img src="./images/decor.png" alt="" />
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
                                 </div>
-                                <div class="works__name">Анастасія Кролевець</div>
-                                <div class="works__subname">Разробка логотипу</div>
-                                <p class="works__text">
-                                    Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий дизайн,
-                                    який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції. Дякую!!!
-                                </p>
+                                <div class="works__item">
+                                    <div class="works__decor">
+                                        <img src="./images/decor.png" alt="" />
+                                    </div>
+                                    <div class="works__name">Анастасія Кролевець 2</div>
+                                    <div class="works__subname">Разробка логотипу</div>
+                                    <p class="works__text">
+                                        Команда професіоналів,проявила себе як справжні експерти у своїй справі. Вони не тільки створили чудовий
+                                        дизайн, який повністю відповідає моїм вимогам та баченню, але й врахували всі мої побажання та пропозиції.
+                                        Дякую!!!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="works__buttons">
@@ -1263,8 +1313,13 @@
                             <h2 class="title__text">Готові <span class="bold">обговорити проєкт?</span></h2>
                         </div>
                         <div class="contacts__content">
-                            <form action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d">
+                            <p class="info-contacts__title info-contacts__title-mobile">
+                                Заповніть коротку форму, наш менеджер зв’яжеться з Вами будь-яким зручним для Вас способом та надасть
+                                <span class="big">БЕЗКОШТОВНУ</span> консультацію і
+                                <span class="orange bold">сформує найбільш вигідну та ефективну пропозицію.</span>
+                            </p>
+                            <form action="https://api.web3forms.com/submit" class="contacts__form" method="POST">
+                                <input type="hidden" name="access_key" value="909bc41f-df99-4c1f-8c24-f4691c41150d" />
                                 <div class="contacts__fields">
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваше ім’я <span class="orange">*</span></label>
@@ -1272,7 +1327,13 @@
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваш номер телефону <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input contact-phone" placeholder="+380 (99) 999-99-99" required name="phone" />
+                                        <input
+                                            type="text"
+                                            class="contacts__input contact-phone"
+                                            placeholder="+380 (99) 999-99-99"
+                                            required
+                                            name="phone"
+                                        />
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Ваш e-mail <span class="orange">*</span></label>
@@ -1280,7 +1341,7 @@
                                     </div>
                                     <div class="contacts__field">
                                         <label for="" class="contacts__label">Назва бренду, компанії <span class="orange">*</span></label>
-                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" required name="brand"/>
+                                        <input type="text" class="contacts__input" placeholder="Вкажіть Вашу пошту" required name="brand" />
                                     </div>
                                 </div>
                                 <div class="contacts__message">
@@ -1301,7 +1362,7 @@
                                     <span class="orange bold">сформує найбільш вигідну та ефективну пропозицію.</span>
                                 </p>
                                 <div class="info-contacts__content">
-                                    <div class="info-contacts__item">
+                                    <div class="info-contacts__item info-contacts__time">
                                         <div class="info-contacts__name">Графік роботи:</div>
                                         <p class="info-contacts__text">Пн-Пт: 8.00 - 18.00</p>
                                     </div>
@@ -1488,8 +1549,9 @@
                     </div>
                     <div class="footer__down down-footer">
                         <div class="down-footer__copy">Copyright © 2025 SendiGroup</div>
+                        <div class="footer__rights-mobile">All Rights Reserved</div>
                         <ul class="down-footer__list">
-                            <li>All Rights Reserved |</li>
+                            <li class="footer__rights">All Rights Reserved |</li>
                             <li><a href="" class="down-footer__link"> Terms and Conditions |</a></li>
                             <li><a href="" class="down-footer__link"> Privacy Policy</a></li>
                         </ul>
@@ -1498,11 +1560,14 @@
             </footer>
         </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/js/intlTelInput.min.js"></script>
     <script src="./js/contactsPopup.js"></script>
     <script src="./js/navigation.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/goodsPopup.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/telInput.js"></script>
+    <script src="./js/barAnimation.js"></script>
 </html>

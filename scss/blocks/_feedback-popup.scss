@@ -16,6 +16,7 @@
         padding: 25px 38px;
         background-color: #fff;
         border-radius: 8px;
+        margin: 0px 10px;
     }
 
     &__cross {
@@ -39,21 +40,14 @@
             font-family: "Bold", sans-serif;
         }
     }
-
-    &__texts {
-        margin-bottom: 13px;
-    }
-
+    
     &__text {
+        margin-bottom: 13px;
         font-weight: 400;
         font-size: 16px;
         line-height: 200%;
         text-align: center;
         color: #000;
-
-        &:not(:last-child) {
-            margin-bottom: 1px;
-        }
 
         span {
             font-family: "Gilroy-Bold", sans-serif;
@@ -149,4 +143,52 @@
 
 .feedback-popup.show {
     display: flex;
+}
+
+@media (max-width: 528px) {
+    .feedback-popup {
+        &__content {
+            padding: 20px 15px;
+            border-radius: 8px;
+        }
+
+        &__cross {
+            width: 12px;
+            height: 12px;
+            top: 15px;
+            right: 15px;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
+        
+        &__text {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 214%;
+        }
+    }
+
+    .form-popup {
+        &__fields {
+            margin-bottom: 29px;
+        }
+
+        &__field {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__input {
+            padding: 16px 15px;
+        }
+
+        &__textarea {
+            padding: 16px 15px;
+        }
+    }
 }

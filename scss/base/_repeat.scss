@@ -70,6 +70,46 @@
     height: 17px;
 }
 
+@media (max-width: 528px) {
+    .button-white {
+        gap: 5px;
+        padding: 13px 13px;
+        border-radius: 5px;
+    }
+
+    .button-white__text {
+        font-size: 10px;
+    }
+
+    .button-white__icon {
+        height: 11px;
+        width: 11px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .button-black {
+        gap: 5px;
+        padding: 13px 18px;
+        border-radius: 5px;
+    }
+
+    .button-black__text {
+        font-size: 10px;
+    }
+
+    .button-black__icon {
+        height: 11px;
+        width: 11px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .big {
     font-family: "Gilroy-ExtraBold", sans-serif;
 }
