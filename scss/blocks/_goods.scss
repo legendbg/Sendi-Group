@@ -1,6 +1,11 @@
 .goods {
+    position: relative;
     padding: 60px 0px;
     border-top: 1px solid #ddd;
+}
+
+.goods__container {
+    position: relative;
 }
 
 .goods__title {
@@ -35,16 +40,26 @@
     color: #fff;
 }
 
-.goods__content {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-bottom: 35px;
+.goods__slider {
     display: none;
 }
 
-.active-tab {
+.goods__content {
+    margin-bottom: 35px;
+}
+
+.goods__row {
     display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+}
+
+.active-tab {
+    display: block;
 }
 
 .goods__item {
@@ -74,4 +89,32 @@
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.prev-good {
+    cursor: pointer;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 12px;
+    z-index: 20;
+}
+
+.next-good {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 12px;
+    z-index: 20;
+}
+
+.prev-good.swiper-button-disabled {
+  display: none;
+}
+
+.next-good.swiper-button-disabled {
+  display: none;
 }
