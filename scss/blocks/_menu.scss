@@ -87,7 +87,7 @@
     z-index: 10;
     top: 80px;
     background-color: #fff;
-    height: 100%;
+    height: calc(100% - 80px);
     overflow: scroll;
     transform: translateX(-100%);
     padding: 30px 0px;
@@ -112,6 +112,7 @@
     }
 
     &__link {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 162%;
@@ -124,6 +125,7 @@
     }
 
     &__title {
+        font-family: "Gilroy-Medium", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 171%;
@@ -143,7 +145,7 @@
         border: 1px solid #424046;
         border-radius: 100px;
         padding: 4px 10px;
-        font-weight: 500;
+        font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         line-height: 171%;
         letter-spacing: -0.02em;
@@ -162,6 +164,7 @@
     }
 
     &__name {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 171%;
@@ -177,6 +180,7 @@
     }
 
     &__text {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 100%;
@@ -233,6 +237,7 @@
     }
 
     &__text {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 15px;
         line-height: 173%;
@@ -259,6 +264,7 @@
     }
 
     &__back-text {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 162%;
@@ -266,6 +272,7 @@
     }
 
     &__category {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 14px;
         color: #fff;
@@ -284,6 +291,7 @@
     }
 
     &__link {
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 186%;

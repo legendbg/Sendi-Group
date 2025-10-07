@@ -3288,7 +3288,7 @@ a {
   z-index: 10;
   top: 80px;
   background-color: #fff;
-  height: 100%;
+  height: calc(100% - 80px);
   overflow: scroll;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -3318,6 +3318,7 @@ a {
   display: none;
 }
 .menu-mobile__link {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 162%;
@@ -3328,6 +3329,7 @@ a {
   border-bottom: 1px solid #ddd;
 }
 .menu-mobile__title {
+  font-family: "Gilroy-Medium", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 171%;
@@ -3350,7 +3352,7 @@ a {
   border: 1px solid #424046;
   border-radius: 100px;
   padding: 4px 10px;
-  font-weight: 500;
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: -0.02em;
@@ -3365,6 +3367,7 @@ a {
   margin-bottom: 15px;
 }
 .contacts-menu__name {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 171%;
@@ -3382,6 +3385,7 @@ a {
   gap: 8px;
 }
 .contacts-menu__text {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
@@ -3440,6 +3444,7 @@ a {
   margin-bottom: 8px;
 }
 .link-submenu__text {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 173%;
@@ -3467,12 +3472,14 @@ a {
   margin-bottom: 12px;
 }
 .content-menu__back-text {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 162%;
   color: #727171;
 }
 .content-menu__category {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 14px;
   color: #fff;
@@ -3494,6 +3501,7 @@ a {
   gap: 8px;
 }
 .content-menu__link {
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 186%;
