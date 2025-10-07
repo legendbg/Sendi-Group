@@ -69,6 +69,10 @@
 
 .goods__image {
     margin-bottom: 15px;
+
+    img {
+        width: 100%;
+    }
 }
 
 .goods__name {
@@ -166,5 +170,44 @@
 
     .goods__buttons {
         display: none;
+    }
+}
+
+@media (max-width: 528px) {
+    .goods {
+        padding: 30px 0px;
+    }
+
+    .goods__title {
+        font-size: 20px;
+        line-height: 105%;
+        margin-bottom: 20px;
+    }
+
+    .goods__tabs {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .goods__tab {
+        font-size: 12px;
+        line-height: 134%;
+        padding: 8px 21px;
+    }
+
+    .goods__row {
+        gap: 5px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .goods__image {
+        margin-bottom: 5px;
+    }
+
+    .goods__name {
+        font-size: 12px;
     }
 }

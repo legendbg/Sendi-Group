@@ -36,9 +36,8 @@ const popupSlider = new Swiper(".popup-slider", {
 });
 
 const goodSlider = new Swiper(".goods__slider", {
-    slidesPerView: 1,
+    slidesPerView: 0.5,
     loop: false,
-    centeredSlides: true,
     navigation: {
         prevEl: ".prev-good",
         nextEl: ".next-good",
@@ -50,10 +49,18 @@ const goodSlider = new Swiper(".goods__slider", {
             }
         },
     },
+    breakpoints: {
+        1530: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 0.8,
+        },
+    },
 });
 
 const productSlider = new Swiper(".products__slider", {
-    slidesPerView: 1,
+    slidesPerView: 0.5,
     loop: false,
     navigation: {
         prevEl: ".prev-products",
@@ -64,6 +71,14 @@ const productSlider = new Swiper(".products__slider", {
             if (this.slides.length <= this.params.slidesPerView) {
                 this.navigation.prevEl.classList.add("swiper-button-disabled");
             }
+        },
+    },
+    breakpoints: {
+        1530: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 0.8,
         },
     },
 });

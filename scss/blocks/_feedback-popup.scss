@@ -130,15 +130,22 @@
         text-align: center;
         color: #fff;
         background-color: #282828;
-
-        &::after {
-            content: "";
-            display: block;
-            background: url("../images/icons/button_white_arrow.svg") 0 0 no-repeat;
-            width: 15px;
-            height: 15px;
-        }
+        transition: all 0.2s linear;
     }
+
+    &__button-icon {
+        transition: all 0.2s linear;
+    }
+}
+
+.form-popup__button:hover {
+    background-color: #f80;
+    border-color: #f80;
+    color: #fff;
+}
+
+.form-popup__button:hover .form-popup__button-icon path {
+    fill: #fff;
 }
 
 .feedback-popup.show {

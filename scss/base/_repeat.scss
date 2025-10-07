@@ -28,9 +28,20 @@
     align-items: center;
     gap: 15px;
     border: 1px solid #282828;
+    transition: all 0.2s linear;
     padding: 20px;
+    color: #000;
     border-radius: 5px;
 }
+
+.button-white__icon path {
+    transition: all 0.2s linear;
+}
+
+.button-black__icon path {
+    transition: all 0.2s linear;
+}
+
 
 .button-white__text {
     font-weight: 600;
@@ -38,12 +49,7 @@
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
-    color: #000;
     font-family: "Gilroy-SemiBold", sans-serif;
-}
-
-.button-white__icon {
-    height: 17px;
 }
 
 .button-black {
@@ -52,8 +58,11 @@
     align-items: center;
     gap: 15px;
     background-color: #282828;
+    border: 1px solid #282828;
     padding: 20px;
     border-radius: 5px;
+    color: #fff;
+    transition: all 0.2s linear;
 }
 
 .button-black__text {
@@ -62,12 +71,26 @@
     line-height: 100%;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
     font-family: "Gilroy-SemiBold", sans-serif;
 }
 
-.button-black__icon {
-    height: 17px;
+.button-black:hover {
+    background-color: #fff;
+    color: #282828;
+}
+
+.button-black:hover .button-black__icon path {
+    fill: #282828;
+}
+
+.button-white:hover {
+    background-color: #f80;
+    border-color: #f80;
+    color: #fff;
+}
+
+.button-white:hover .button-white__icon path {
+    fill: #fff;
 }
 
 @media (max-width: 528px) {
@@ -81,15 +104,6 @@
         font-size: 10px;
     }
 
-    .button-white__icon {
-        height: 11px;
-        width: 11px;
-
-        img {
-            width: 100%;
-        }
-    }
-
     .button-black {
         gap: 5px;
         padding: 13px 18px;
@@ -99,15 +113,6 @@
     .button-black__text {
         font-size: 10px;
     }
-
-    .button-black__icon {
-        height: 11px;
-        width: 11px;
-
-        img {
-            width: 100%;
-        }
-    }
 }
 
 .big {
@@ -116,4 +121,8 @@
 
 .orange {
     color: #f80 !important;
+}
+
+.underline {
+    text-decoration: underline;
 }

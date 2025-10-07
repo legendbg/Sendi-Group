@@ -1,7 +1,7 @@
 .header {
     padding: 21px 0px;
     border-bottom: 1px solid #ddd;
-    z-index: 10;
+    z-index: 12;
     height: 82px;
 
     &__container {
@@ -31,7 +31,7 @@
         font-size: 16px;
         line-height: 162%;
         color: #1c1c1c;
-        font-family: "Gilroy-Medium", sans-serif;
+        font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
     }
 
@@ -48,13 +48,14 @@
     }
 
     &__number {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 15px;
         line-height: 93%;
         text-transform: uppercase;
         text-align: center;
         color: #1c1c1c;
         font-family: "Gilroy-Medium", sans-serif;
+        font-family: "Gilroy-SemiBold", sans-serif;
     }
 
     &__close-burger {
@@ -62,12 +63,16 @@
     }
 
     &__button {
+        cursor: pointer;
         border: 1px solid #1c1c1c;
         border-radius: 5px;
         padding: 13px 18px;
         gap: 15px;
         display: flex;
         align-items: center;
+        color: #1c1c1c;
+        background-color: #fff;
+        transition: all 0.2s linear;
     }
 
     &__button-link {
@@ -76,12 +81,11 @@
         line-height: 108%;
         text-transform: uppercase;
         text-align: center;
-        color: #1c1c1c;
+        font-family: "Gilroy-SemiBold", sans-serif;
     }
 
-    &__button-arrow {
-        width: 10px;
-        height: 12px;
+    &__button-arrow path {
+        transition: all 0.2s linear;
     }
 
     &__burger {
@@ -96,6 +100,16 @@
             border-radius: 2px;
         }
     }
+}
+
+.header__button:hover {
+    background-color: #f80;
+    border-color: #f80;
+    color: #fff;
+}
+
+.header__button:hover .header__button-arrow path {
+    fill: #fff;
 }
 
 .link-products {
@@ -190,11 +204,6 @@
         &__button-link {
             font-size: 10px;
             line-height: 140%;
-        }
-
-        &__button-arrow {
-            width: 8px;
-            height: 8px;
         }
     }
 }
