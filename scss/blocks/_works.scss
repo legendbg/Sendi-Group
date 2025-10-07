@@ -21,6 +21,11 @@
     margin-bottom: 25px;
     animation: scrollRev 10s linear infinite;
     animation-play-state: paused;
+
+    @media (max-width: 1020px) {
+        animation-duration: 20s;
+        animation-play-state: running;
+    }
 }
 
 .works__item {
@@ -75,7 +80,7 @@
         transform: translateX(0%);
     }
     50% {
-        transform: translateX(calc(-100% + 1545px));
+        transform: translateX(calc(-100% + 100vw - 150px));
     }
     100% {
         transform: translateX(0%);
