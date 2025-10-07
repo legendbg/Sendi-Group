@@ -112,9 +112,59 @@
 }
 
 .prev-good.swiper-button-disabled {
-  display: none;
+    display: none;
 }
 
 .next-good.swiper-button-disabled {
-  display: none;
+    display: none;
+}
+
+@media (max-width: 1680px) {
+    .next-good {
+        display: none;
+    }
+
+    .prev-good {
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+    .goods {
+        padding: 16px 0px 40px;
+    }
+
+    .goods__title {
+        font-size: 24px;
+        line-height: 250%;
+        margin-bottom: 15px;
+    }
+
+    .goods__content {
+        margin-bottom: 0px;
+    }
+
+    .goods__row {
+        gap: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .goods__image {
+        margin-bottom: 10px;
+    }
+
+    .goods__name {
+        font-family: "Gilroy-Medium", sans-serif;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #282828;
+    }
+
+    .goods__buttons {
+        display: none;
+    }
 }

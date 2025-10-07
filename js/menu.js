@@ -1,4 +1,4 @@
-const menuButtons = document.querySelectorAll(".link-products");
+const menuButtons = document.querySelectorAll(".link-menu");
 const menus = document.querySelectorAll(".menu");
 
 menuButtons.forEach((menuButton) => {

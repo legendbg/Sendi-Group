@@ -38,9 +38,26 @@ const popupSlider = new Swiper(".popup-slider", {
 const goodSlider = new Swiper(".goods__slider", {
     slidesPerView: 1,
     loop: false,
+    centeredSlides: true,
     navigation: {
         prevEl: ".prev-good",
         nextEl: ".next-good",
+    },
+    on: {
+        init: function () {
+            if (this.slides.length <= this.params.slidesPerView) {
+                this.navigation.prevEl.classList.add("swiper-button-disabled");
+            }
+        },
+    },
+});
+
+const productSlider = new Swiper(".products__slider", {
+    slidesPerView: 1,
+    loop: false,
+    navigation: {
+        prevEl: ".prev-products",
+        nextEl: ".next-products",
     },
     on: {
         init: function () {

@@ -70,8 +70,8 @@
                         <nav class="header__nav">
                             <ul class="header__list">
                                 <li><a href="" class="header__link link-header" id="who">Про нас</a></li>
-                                <li><a href="" class="header__link link-products" data-menu="products">Продукція</a></li>
-                                <li><a href="" class="header__link link-products" data-menu="services">Послуги</a></li>
+                                <li><a href="" class="header__link link-products link-menu" data-menu="products">Продукція</a></li>
+                                <li><a href="" class="header__link link-products link-menu" data-menu="services">Послуги</a></li>
                                 <li><a href="" class="header__link link-header" id="who">Про нас</a></li>
                                 <li><a href="" class="header__link link-header" id="works">Відгуки</a></li>
                                 <li><a href="" class="header__link link-header" id="steps">Етапи роботи</a></li>
@@ -93,347 +93,219 @@
                             </div>
                         </div>
                         <div class="header__burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <div class="header__close-burger">
+                                <img src="./images/icons/burger/close-burger.svg" alt="">
+                            </div>
+                            <div class="header__open-burger">
+                                <img src="./images/icons/burger/open-burger.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <!-- <div class="menu" data-menu="products">
+            <div class="menu" data-menu="products">
                 <div class="menu__container _container">
                     <div class="menu__name">Продукція</div>
                     <div class="menu__content">
                         <div class="menu__row">
                             <div class="menu__item item-menu">
-                                <div class="item-menu__name">Суверіна продукція</div>
+                                <div class="item-menu__name">Брендована продукція</div>
                                 <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
-                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
-                                    <li><a href="" class="item-menu__link">Значкі</a></li>
-                                    <li><a href="" class="item-menu__link">Надувні шари</a></li>
-                                    <li><a href="" class="item-menu__link">Мульти-титули</a></li>
-                                    <li><a href="" class="item-menu__link">Зонти</a></li>
-                                    <li><a href="" class="item-menu__link">Посуд з логотипом</a></li>
-                                    <li><a href="" class="item-menu__link">Піни</a></li>
-                                    <li><a href="" class="item-menu__link">Рушники</a></li>
-                                    <li><a href="" class="item-menu__link">Світловідбиваючі браслети</a></li>
-                                    <li><a href="" class="item-menu__link">Силіконові браслети</a></li>
-                                    <li><a href="" class="item-menu__link">Чашки</a></li>
-                                    <li><a href="" class="item-menu__link">Шнурки для бейджей</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Сумки</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Бананки</a></li>
-                                    <li><a href="" class="item-menu__link">Спортивні чи дорожні </a></li>
-                                    <li><a href="" class="item-menu__link">Рюкзаки</a></li>
+                                    <li><a href="" class="item-menu__link">Шкіргалантерея</a></li>
+                                    <li><a href="" class="item-menu__link">Трикотажна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Продукція зі складних тканин</a></li>
+                                    <li><a href="" class="item-menu__link">Керамічна продукція</a></li>
+                                    <li><a href="" class="item-menu__link">Електроніка</a></li>
+                                    <li><a href="" class="item-menu__link">Упакування</a></li>
+                                    <li><a href="" class="item-menu__link">Шопери</a></li>
+                                    <li><a href="" class="item-menu__link">Канцелярія</a></li>
+                                    <li><a href="" class="item-menu__link">Аксесуари</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="menu__row">
                             <div class="menu__item item-menu">
-                                <div class="item-menu__name">Електроніка</div>
+                                <div class="item-menu__name">Поліграфія</div>
                                 <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Bluetooth колонки</a></li>
-                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
-                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
-                                    <li><a href="" class="item-menu__link">Значкі</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Подорожі та відпочинок</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Валізи</a></li>
-                                    <li><a href="" class="item-menu__link">Ланчбокси</a></li>
-                                    <li><a href="" class="item-menu__link">Пледи</a></li>
-                                    <li><a href="" class="item-menu__link">Пляшка для води</a></li>
-                                    <li><a href="" class="item-menu__link">Подушка для подорожей</a></li>
-                                    <li><a href="" class="item-menu__link">Термопляшки</a></li>
-                                    <li><a href="" class="item-menu__link">Термоси</a></li>
-                                    <li><a href="" class="item-menu__link">Термосумки</a></li>
-                                    <li><a href="" class="item-menu__link">Термочашки</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Еко - продукція</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">ЕКО блокноти</a></li>
-                                    <li><a href="" class="item-menu__link">ЕКО ручки і олівці</a></li>
-                                    <li><a href="" class="item-menu__link">ЕКО сумки</a></li>
-                                    <li><a href="" class="item-menu__link">Ланчбокси бамбукові</a></li>
-                                    <li><a href="" class="item-menu__link">Чашки бамбукові</a></li>
-                                    <li><a href="" class="item-menu__link">Пакети з крафту</a></li>
-                                    <li><a href="" class="item-menu__link">Фашки дерев’яні</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Поліграфічна продукція</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Афіши та плакати</a></li>
-                                    <li><a href="" class="item-menu__link">Бланки</a></li>
-                                    <li><a href="" class="item-menu__link">Блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">Бейджи</a></li>
                                     <li><a href="" class="item-menu__link">Візитки</a></li>
-                                    <li><a href="" class="item-menu__link">Грамоти та сертифікати</a></li>
-                                    <li><a href="" class="item-menu__link">Запрошення</a></li>
-                                    <li><a href="" class="item-menu__link">Білети</a></li>
-                                    <li><a href="" class="item-menu__link">Листівки</a></li>
-                                    <li><a href="" class="item-menu__link">Меню</a></li>
-                                    <li><a href="" class="item-menu__link">Наліпки та стікери</a></li>
-                                    <li><a href="" class="item-menu__link">Об’ємні наліпки</a></li>
-                                    <li><a href="" class="item-menu__link">Скотч з логотипом</a></li>
-                                    <li><a href="" class="item-menu__link">Стікерпаки</a></li>
-                                    <li><a href="" class="item-menu__link">Флаєри та буклети</a></li>
-                                    <li><a href="" class="item-menu__link">Щоденники</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Пакети та упакова</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Коробки</a></li>
-                                    <li><a href="" class="item-menu__link">Паперові пакети</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Промо - одяг</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Бомбери</a></li>
-                                    <li><a href="" class="item-menu__link">Дитячі футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Жилетки</a></li>
-                                    <li><a href="" class="item-menu__link">Кепки</a></li>
-                                    <li><a href="" class="item-menu__link">Куртки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки з довгим рукавом</a></li>
-                                    <li><a href="" class="item-menu__link">Світшоти</a></li>
-                                    <li><a href="" class="item-menu__link">Сорочки</a></li>
-                                    <li><a href="" class="item-menu__link">Спортивні футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки “поло”</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки з V-вирізом</a></li>
-                                    <li><a href="" class="item-menu__link">Фліси</a></li>
-                                    <li><a href="" class="item-menu__link">Худі</a></li>
-                                    <li><a href="" class="item-menu__link">Шапки</a></li>
-                                    <li><a href="" class="item-menu__link">Шкарпетки</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Канцелярія</div>
-                                <ul class="item-menu__links">
+                                    <li><a href="" class="item-menu__link">Буклети та Брошури</a></li>
+                                    <li><a href="" class="item-menu__link">Каталоги</a></li>
+                                    <li><a href="" class="item-menu__link">Плакати</a></li>
+                                    <li><a href="" class="item-menu__link">Наліпки</a></li>
+                                    <li><a href="" class="item-menu__link">Етикетки</a></li>
                                     <li><a href="" class="item-menu__link">Календарі</a></li>
-                                    <li><a href="" class="item-menu__link">Кубарики</a></li>
-                                    <li><a href="" class="item-menu__link">Папки</a></li>
-                                    <li><a href="" class="item-menu__link">Ручки та олівці</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Кухонні аксусуари</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Фастери</a></li>
-                                    <li><a href="" class="item-menu__link">Фартухи</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Корпоративні подарунки</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
-                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
-                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Каталоги</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
-                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
-                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                    <li><a href="" class="item-menu__link">Папки з логотипом</a></li>
+                                    <li><a href="" class="item-menu__link">Блокноти</a></li>
+                                    <li><a href="" class="item-menu__link">Сертифікати та Дипломи</a></li>
+                                    <li><a href="" class="item-menu__link">Меню</a></li>
+                                    <li><a href="" class="item-menu__link">Конверти</a></li>
+                                    <li><a href="" class="item-menu__link">Шелфтокери</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <!-- <div class="menu" data-menu="services">
+            </div>
+            <div class="menu" data-menu="services">
                 <div class="menu__container _container">
                     <div class="menu__name">Послуги</div>
                     <div class="menu__content">
                         <div class="menu__row">
                             <div class="menu__item item-menu">
-                                <div class="item-menu__name">Суверіна продукція</div>
+                                <div class="item-menu__name">IT Послуги</div>
                                 <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
-                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
-                                    <li><a href="" class="item-menu__link">Значкі</a></li>
-                                    <li><a href="" class="item-menu__link">Надувні шари</a></li>
-                                    <li><a href="" class="item-menu__link">Мульти-титули</a></li>
-                                    <li><a href="" class="item-menu__link">Зонти</a></li>
-                                    <li><a href="" class="item-menu__link">Посуд з логотипом</a></li>
-                                    <li><a href="" class="item-menu__link">Піни</a></li>
-                                    <li><a href="" class="item-menu__link">Рушники</a></li>
-                                    <li><a href="" class="item-menu__link">Світловідбиваючі браслети</a></li>
-                                    <li><a href="" class="item-menu__link">Силіконові браслети</a></li>
-                                    <li><a href="" class="item-menu__link">Чашки</a></li>
-                                    <li><a href="" class="item-menu__link">Шнурки для бейджей</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Сумки</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Бананки</a></li>
-                                    <li><a href="" class="item-menu__link">Спортивні чи дорожні </a></li>
-                                    <li><a href="" class="item-menu__link">Рюкзаки</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Електроніка</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Bluetooth колонки</a></li>
-                                    <li><a href="" class="item-menu__link">Бейджі</a></li>
-                                    <li><a href="" class="item-menu__link">Антистреси</a></li>
-                                    <li><a href="" class="item-menu__link">Дитяча рекламна продукція</a></li>
-                                    <li><a href="" class="item-menu__link">Запальнички</a></li>
-                                    <li><a href="" class="item-menu__link">Значкі</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Подорожі та відпочинок</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Валізи</a></li>
-                                    <li><a href="" class="item-menu__link">Ланчбокси</a></li>
-                                    <li><a href="" class="item-menu__link">Пледи</a></li>
-                                    <li><a href="" class="item-menu__link">Пляшка для води</a></li>
-                                    <li><a href="" class="item-menu__link">Подушка для подорожей</a></li>
-                                    <li><a href="" class="item-menu__link">Термопляшки</a></li>
-                                    <li><a href="" class="item-menu__link">Термоси</a></li>
-                                    <li><a href="" class="item-menu__link">Термосумки</a></li>
-                                    <li><a href="" class="item-menu__link">Термочашки</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Еко - продукція</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">ЕКО блокноти</a></li>
-                                    <li><a href="" class="item-menu__link">ЕКО ручки і олівці</a></li>
-                                    <li><a href="" class="item-menu__link">ЕКО сумки</a></li>
-                                    <li><a href="" class="item-menu__link">Ланчбокси бамбукові</a></li>
-                                    <li><a href="" class="item-menu__link">Чашки бамбукові</a></li>
-                                    <li><a href="" class="item-menu__link">Пакети з крафту</a></li>
-                                    <li><a href="" class="item-menu__link">Фашки дерев’яні</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Поліграфічна продукція</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Афіши та плакати</a></li>
-                                    <li><a href="" class="item-menu__link">Бланки</a></li>
-                                    <li><a href="" class="item-menu__link">Блокноти</a></li>
-                                    <li><a href="" class="item-menu__link">Візитки</a></li>
-                                    <li><a href="" class="item-menu__link">Грамоти та сертифікати</a></li>
-                                    <li><a href="" class="item-menu__link">Запрошення</a></li>
-                                    <li><a href="" class="item-menu__link">Білети</a></li>
-                                    <li><a href="" class="item-menu__link">Листівки</a></li>
-                                    <li><a href="" class="item-menu__link">Меню</a></li>
-                                    <li><a href="" class="item-menu__link">Наліпки та стікери</a></li>
-                                    <li><a href="" class="item-menu__link">Об’ємні наліпки</a></li>
-                                    <li><a href="" class="item-menu__link">Скотч з логотипом</a></li>
-                                    <li><a href="" class="item-menu__link">Стікерпаки</a></li>
-                                    <li><a href="" class="item-menu__link">Флаєри та буклети</a></li>
-                                    <li><a href="" class="item-menu__link">Щоденники</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Пакети та упакова</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Коробки</a></li>
-                                    <li><a href="" class="item-menu__link">Паперові пакети</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Промо - одяг</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Бомбери</a></li>
-                                    <li><a href="" class="item-menu__link">Дитячі футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Жилетки</a></li>
-                                    <li><a href="" class="item-menu__link">Кепки</a></li>
-                                    <li><a href="" class="item-menu__link">Куртки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки з довгим рукавом</a></li>
-                                    <li><a href="" class="item-menu__link">Світшоти</a></li>
-                                    <li><a href="" class="item-menu__link">Сорочки</a></li>
-                                    <li><a href="" class="item-menu__link">Спортивні футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки “поло”</a></li>
-                                    <li><a href="" class="item-menu__link">Футболки з V-вирізом</a></li>
-                                    <li><a href="" class="item-menu__link">Фліси</a></li>
-                                    <li><a href="" class="item-menu__link">Худі</a></li>
-                                    <li><a href="" class="item-menu__link">Шапки</a></li>
-                                    <li><a href="" class="item-menu__link">Шкарпетки</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Канцелярія</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Календарі</a></li>
-                                    <li><a href="" class="item-menu__link">Кубарики</a></li>
-                                    <li><a href="" class="item-menu__link">Папки</a></li>
-                                    <li><a href="" class="item-menu__link">Ручки та олівці</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu__row">
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Кухонні аксусуари</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Фастери</a></li>
-                                    <li><a href="" class="item-menu__link">Фартухи</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Корпоративні подарунки</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
-                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
-                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
-                                </ul>
-                            </div>
-                            <div class="menu__item item-menu">
-                                <div class="item-menu__name">Каталоги</div>
-                                <ul class="item-menu__links">
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для клієнтів</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки для партнерів</a></li>
-                                    <li><a href="" class="item-menu__link">Подарунки на корпоратив</a></li>
-                                    <li><a href="" class="item-menu__link">Корпоративні подарунки на Новий Рік</a></li>
-                                    <li><a href="" class="item-menu__link">Подарункові набори</a></li>
+                                    <li><a href="" class="item-menu__link">Розробка ЛЕНДИНГУ</a></li>
+                                    <li><a href="" class="item-menu__link">Розробка КООПЕРАТИВНОГО САЙТУ</a></li>
+                                    <li><a href="" class="item-menu__link">Розробка ДОДАТКУ</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <div class="menu-mobile">
+                <div class="menu-mobile__container _container">
+                    <div class="menu-mobile__list">
+                        <li><a href="" class="menu-mobile__link">Про нас</a></li>
+                        <li>
+                            <div class="menu-mobile__link link-submenu">
+                                <div class="link-products link-sub-menu">Продукція</div>
+                                <div class="link-submenu__content">
+                                    <div class="link-submenu__item open-menu" data-sub-menu="1">
+                                        <div class="link-submenu__text">Брендована продукція</div>
+                                        <div class="link-submenu__icon">
+                                            <img src="./images/icons/triangle.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="link-submenu__item open-menu" data-sub-menu="2">
+                                        <div class="link-submenu__text">Поліграфія</div>
+                                        <div class="link-submenu__icon">
+                                            <img src="./images/icons/triangle.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-mobile__link link-products open-menu" data-sub-menu="3">
+                                Послуги
+                            </div>
+                        </li>
+                        <li><a href="" class="menu-mobile__link">Про нас</a></li>
+                        <li><a href="" class="menu-mobile__link">Відгуки</a></li>
+                        <li><a href="" class="menu-mobile__link">Етапи роботи</a></li>
+                        <li><a href="" class="menu-mobile__link">Часті питання</a></li>
+                    </div>
+                    <div class="menu-mobile__content content-menu" data-sub-menu="1">
+                        <div class="content-menu__back">
+                            <div class="content-menu__icon">
+                                <img src="./images/icons/back-arrow.svg" alt="">
+                            </div>
+                            <div class="content-menu__back-text">Назад</div>
+                        </div>
+                        <div class="content-menu__category">Брендована продукція</div>
+                        <ul class="content-menu__list">
+                            <li><a href="" class="content-menu__link">Шкіргалантерея</a></li>
+                            <li><a href="" class="content-menu__link">Трикотажна продукція</a></li>
+                            <li><a href="" class="content-menu__link">Продукція зі складних тканин</a></li>
+                            <li><a href="" class="content-menu__link">Керамічна продукція</a></li>
+                            <li><a href="" class="content-menu__link">Електроніка</a></li>
+                            <li><a href="" class="content-menu__link">Упакування</a></li>
+                            <li><a href="" class="content-menu__link">Шопери</a></li>
+                            <li><a href="" class="content-menu__link">Канцелярія</a></li>
+                            <li><a href="" class="content-menu__link">Аксесуари</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-mobile__content content-menu" data-sub-menu="2">
+                        <div class="content-menu__back">
+                            <div class="content-menu__icon">
+                                <img src="./images/icons/back-arrow.svg" alt="">
+                            </div>
+                            <div class="content-menu__back-text">Назад</div>
+                        </div>
+                        <div class="content-menu__category">Поліграфія</div>
+                        <ul class="content-menu__list">
+                            <li><a href="" class="content-menu__link">Бейджи</a></li>
+                            <li><a href="" class="content-menu__link">Візитки</a></li>
+                            <li><a href="" class="content-menu__link">Флаєри та Листівки</a></li>
+                            <li><a href="" class="content-menu__link">Буклети та Брошури</a></li>
+                            <li><a href="" class="content-menu__link">Каталоги</a></li>
+                            <li><a href="" class="content-menu__link">Плакати</a></li>
+                            <li><a href="" class="content-menu__link">Наліпки</a></li>
+                            <li><a href="" class="content-menu__link">Етикетки</a></li>
+                            <li><a href="" class="content-menu__link">Календарі</a></li>
+                            <li><a href="" class="content-menu__link">Папки з логотипом</a></li>
+                            <li><a href="" class="content-menu__link">Блокноти</a></li>
+                            <li><a href="" class="content-menu__link">Сертифікати та Дипломи</a></li>
+                            <li><a href="" class="content-menu__link">Меню</a></li>
+                            <li><a href="" class="content-menu__link">Конверти</a></li>
+                            <li><a href="" class="content-menu__link">Шелфтокери</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-mobile__content content-menu" data-sub-menu="3">
+                        <div class="content-menu__back">
+                            <div class="content-menu__icon">
+                                <img src="./images/icons/back-arrow.svg" alt="">
+                            </div>
+                            <div class="content-menu__back-text">Назад</div>
+                        </div>
+                        <div class="content-menu__category">IT послуги</div>
+                        <ul class="content-menu__list">
+                            <li><a href="" class="content-menu__link">Розробка ЛЕНДИНГУ</a></li>
+                            <li><a href="" class="content-menu__link">Розробка САЙТУ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-mobile__tags">
+                        <div class="menu-mobile__title">Працюємо з нішами</div>
+                        <div class="menu-mobile__tags-content">
+                            <p class="menu-mobile__tag">Affiliate marketing</p>
+                            <p class="menu-mobile__tag">Gambling</p>
+                            <p class="menu-mobile__tag">Betting</p>
+                            <p class="menu-mobile__tag">Trading</p>
+                            <p class="menu-mobile__tag">Manufacturing</p>
+                            <p class="menu-mobile__tag">Insurance</p>
+                            <p class="menu-mobile__tag">Healthcare</p>
+                            <p class="menu-mobile__tag">Finance</p>
+                            <p class="menu-mobile__tag">Manufacturing</p>
+                            <p class="menu-mobile__tag">Agriculture</p>
+                            <p class="menu-mobile__tag">Logistics</p>
+                            <p class="menu-mobile__tag">Oil & Gas</p>
+                            <p class="menu-mobile__tag">Інших 75+ ніш</p>
+                        </div>
+                    </div>
+                    <div class="menu-mobile__contacts contacts-menu">
+                        <div class="contacts-menu__item">
+                            <div class="contacts-menu__name">Контакти</div>
+                            <div class="contacts-menu__info">
+                                <div class="contacts-menu__icon">
+                                    <img src="./images/icons/phone.svg" alt="">
+                                </div>
+                                <div class="contacts-menu__text">+38 (093) 673-93-93</div>
+                            </div>
+                        </div>
+                        <div class="contacts-menu__item">
+                            <div class="contacts-menu__name">E-mail </div>
+                            <div class="contacts-menu__info">
+                                <div class="contacts-menu__icon">
+                                    <img src="./images/icons/mail.svg" alt="">
+                                </div>
+                                <div class="contacts-menu__text">SendiGroup@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contacts-menu__item">
+                            <div class="contacts-menu__name">Адреса</div>
+                            <div class="contacts-menu__info">
+                                <div class="contacts-menu__icon">
+                                    <img src="./images/icons/map.svg" alt="">
+                                </div>
+                                <div class="contacts-menu__text">вул Богдана Хмельницького 48</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-menu__button contact-popup-button">Обговорити проєкт</div>
+                </div>
+            </div>
             <main class="main">
                 <section class="home">
                     <div class="home__container _container">
@@ -733,79 +605,483 @@
                         </div>
                         <div class="products__tabs">
                             <div class="products__tab-content">
-                                <div class="products__tab tab-title active-title" data-tab="1.1">Усі</div>
-                                <div class="products__tab tab-title" data-tab="1.2">Послуги дизайну</div>
-                                <div class="products__tab tab-title" data-tab="1.3">Розробка сайтів</div>
-                                <div class="products__tab tab-title" data-tab="1.4">Ведення соц.мереж</div>
+                                <div class="products__tab product-tab-title active-title" data-tab="1">Усі</div>
+                                <div class="products__tab product-tab-title" data-tab="2">Послуги дизайну</div>
+                                <div class="products__tab product-tab-title" data-tab="3">Розробка сайтів</div>
+                                <div class="products__tab product-tab-title" data-tab="4">Ведення соц.мереж</div>
                             </div>
                             <div class="tabs-container">
-                                <div class="products__tab-content tab-subtab tab-content active-tab" data-tab="1.1">
-                                    <div class="products__tab tab-title active-title">Усі1</div>
-                                    <div class="products__tab tab-title">Поліграфія1</div>
+                                <div class="products__tab-content active-sub-tab-content active" data-tab="1">
+                                    <div class="products__tab product-sub-tab-title active-title" data-tab="1.1">Усі1</div>
+                                    <div class="products__tab product-sub-tab-title" data-tab="1.2">Поліграфія1</div>
                                 </div>
-                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.2">
-                                    <div class="products__tab tab-title active-title">Усі2</div>
-                                    <div class="products__tab tab-title">Поліграфія2</div>
+                                <div class="products__tab-content active-sub-tab-content" data-tab="2">
+                                    <div class="products__tab product-sub-tab-title active-title" data-tab="2.1">Усі2</div>
+                                    <div class="products__tab product-sub-tab-title" data-tab="2.2">Поліграфія2</div>
                                 </div>
-                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.3">
-                                    <div class="products__tab tab-title active-title">Усі3</div>
-                                    <div class="products__tab tab-title">Поліграфія3</div>
+                                <div class="products__tab-content active-sub-tab-content" data-tab="3">
+                                    <div class="products__tab product-sub-tab-title active-title" data-tab="3.1">Усі3</div>
+                                    <div class="products__tab product-sub-tab-title" data-tab="3.2">Поліграфія3</div>
                                 </div>
-                                <div class="products__tab-content tab-subtab tab-content" data-tab="1.4">
-                                    <div class="products__tab tab-title active-title">Усі4</div>
-                                    <div class="products__tab tab-title">Поліграфія4</div>
+                                <div class="products__tab-content active-sub-tab-content" data-tab="4">
+                                    <div class="products__tab product-sub-tab-title active-title" data-tab="4.1">Усі4</div>
+                                    <div class="products__tab product-sub-tab-title" data-tab="4.1">Поліграфія4</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="products__content">
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                        <div class="prev-products swiper-button-disabled">
+                            <img src="./images/prev-button.svg" alt="" />
+                        </div>
+                        <div class="products__slider swiper sub-tab-content active" data-tab="1.1">
+                            <div class="swiper-wrapper">
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
-                            </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
                             </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                        </div>
+                        <div class="products__slider swiper sub-tab-content" data-tab="1.2">
+                            <div class="swiper-wrapper">
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 3.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
-                            </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
                             </div>
-                            <div class="goods__item">
-                                <div class="goods__image">
-                                    <img src="./images/good.png" alt="" />
+                        </div>
+                        <div class="products__slider swiper sub-tab-content" data-tab="2.1">
+                            <div class="swiper-wrapper">
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 4.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
-                            </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
                             </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                        </div>
+                        <div class="products__slider swiper sub-tab-content" data-tab="2.2">
+                            <div class="swiper-wrapper">
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 5.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
-                            </div>
-                            <div class="products__item">
-                                <div class="products__image">
-                                    <img src="./images/good.png" alt="" />
+                                <div class="products__content swiper-slide">
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
+                                    <div class="products__row">
+                                        <div class="products__item">
+                                            <div class="goods__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                        <div class="products__item">
+                                            <div class="products__image">
+                                                <img src="./images/good.png" alt="" />
+                                            </div>
+                                            <div class="products__name">Lorem Ipsum 2.0</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="products__name">Lorem Ipsum 2.0</div>
                             </div>
+                        </div>
+                        <div class="next-products">
+                            <img src="./images/next-button.svg" alt="" />
                         </div>
                         <div class="products__buttons">
                             <div class="works__button-white button-white">
@@ -1495,5 +1771,7 @@
     <script src="./js/goodsPopup.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/telInput.js"></script>
+    <script src="./js/productsTabs.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/barAnimation.js"></script>
 </html>

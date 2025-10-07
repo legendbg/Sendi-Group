@@ -17,6 +17,6 @@ tabsTitle.forEach((tab) => {
             if(content.getAttribute("data-tab") === targetTab) {
                 content.classList.add("active-tab");
             }
-        });
+        }); 
     });
 });
