@@ -184,7 +184,6 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 100%;
-        text-transform: capitalize;
         text-align: center;
         color: #1c1c1c;
     }
@@ -204,15 +203,21 @@
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 15px;
-            height: 15px;
-            background: url("../../images/icons/button_white_arrow.svg") 0 0 no-repeat;
-        }
+        transition: all 0.2s linear;
     }
+
+    &__button-arrow {
+        transition: all 0.2s linear;
+    }
+}
+
+.contacts-menu__button:hover {
+    background-color: #fff;
+    color: #282828;
+}
+
+contacts-menu__button:hover .contacts-menu__button-arrow path {
+    fill: #282828;
 }
 
 .link-submenu {

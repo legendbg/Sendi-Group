@@ -27,6 +27,9 @@
 
     &__field {
         flex: 1 1 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
         .iti {
             width: 100%;
@@ -37,7 +40,6 @@
         font-family: "Gilroy-Medium", sans-serif;
         font-size: 14px;
         color: #000;
-        margin-bottom: 10px;
     }
 
     &__input {
@@ -69,6 +71,7 @@
         font-size: 14px;
         color: #777;
         height: 240px;
+        margin-top: 10px;
 
         &::placeholder {
             font-weight: 400;
