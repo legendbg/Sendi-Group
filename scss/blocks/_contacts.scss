@@ -52,6 +52,7 @@
         color: #777;
 
         &::placeholder {
+            font-family: "Gilroy-Regular", sans-serif;
             font-weight: 400;
             font-size: 14px;
             color: #777;
@@ -74,6 +75,7 @@
         margin-top: 10px;
 
         &::placeholder {
+            font-family: "Gilroy-Regular", sans-serif;
             font-weight: 400;
             font-size: 14px;
             color: #777;
@@ -309,7 +311,7 @@
             &:not(:last-child) {
                 margin-bottom: 20px;
             }
-        } 
+        }
 
         &__label {
             font-size: 14px;
@@ -322,20 +324,16 @@
         &__button {
             gap: 8px;
             padding: 13px 8px;
+
+            svg {
+                height: 11px;
+                width: 11px;
+            }
         }
 
         &__button-text {
             font-size: 10px;
             line-height: 140%;
-        }
-
-        &__arrow {
-            width: 11px;
-            height: 11px;
-
-            img {
-                width: 100%;
-            }
         }
     }
 

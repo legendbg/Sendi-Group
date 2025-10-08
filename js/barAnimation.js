@@ -14,11 +14,11 @@ if (mediaQueryList) {
         }
     });
 } else {
-    barAnimation.addEventListener("mouseenter", () => {
-        barAnimation.style.animationPlayState = "running";
-    });
-
-    barAnimation.addEventListener("mouseleave", () => {
-        barAnimation.style.animationPlayState = "paused";
-    });
 }
+barAnimation.addEventListener("mouseenter", () => {
+    barAnimation.style.animationPlayState = "running";
+});
+
+barAnimation.addEventListener("mouseleave", () => {
+    barAnimation.style.animationPlayState = "paused";
+});

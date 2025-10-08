@@ -36,7 +36,8 @@ const popupSlider = new Swiper(".popup-slider", {
 });
 
 const goodSlider = new Swiper(".goods__slider", {
-    slidesPerView: 0.5,
+    slidesPerView: 0.6,
+    spaceBetween: 10,
     loop: false,
     navigation: {
         prevEl: ".prev-good",
@@ -55,12 +56,14 @@ const goodSlider = new Swiper(".goods__slider", {
         },
         768: {
             slidesPerView: 0.8,
+            spaceBetween: 30,
         },
     },
 });
 
 const productSlider = new Swiper(".products__slider", {
-    slidesPerView: 0.5,
+    slidesPerView: 0.6,
+    spaceBetween: 10,
     loop: false,
     navigation: {
         prevEl: ".prev-products",
@@ -79,6 +82,7 @@ const productSlider = new Swiper(".products__slider", {
         },
         768: {
             slidesPerView: 0.8,
+            spaceBetween: 30,
         },
     },
 });

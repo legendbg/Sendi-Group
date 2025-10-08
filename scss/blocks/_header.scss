@@ -1,8 +1,11 @@
 .header {
+    position: fixed;
     padding: 21px 0px;
+    width: 100%;
     border-bottom: 1px solid #ddd;
     z-index: 12;
     height: 82px;
+    background-color: #fff;
 
     &__container {
         display: flex;
@@ -33,6 +36,10 @@
         color: #1c1c1c;
         font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     &__info {

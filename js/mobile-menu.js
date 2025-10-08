@@ -33,7 +33,7 @@ subMenuButtons.forEach((subMenuButton) =>
 
                 exitButton.addEventListener("click", (e) => {
                     menuList.classList.remove("hide");
-                    menuContent.classList.remove("active");
+                    menusContent.forEach(el => el.classList.remove("active"));
                 });
             }
         });

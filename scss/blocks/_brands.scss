@@ -1,15 +1,21 @@
 .brands__container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     padding: 20px 0px;
+    display: flex;
+    align-items: baseline;
     gap: 50px;
-    animation: scrollLine 10s linear infinite;
 }
 
 .brands {
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 50px;
+        animation: scrollLine 10s linear infinite;
+    }
 }
 
 .brands {
@@ -21,13 +27,7 @@
 }
 
 @keyframes scrollLine {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(calc(-100%));
-    }
-    100% {
-        transform: translateX(0%);
+    to {
+        transform: translateX(calc(-100% - 50px));
     }
 }

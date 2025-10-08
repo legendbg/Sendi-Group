@@ -246,6 +246,21 @@ a {
 }
 
 .brands__container {
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 50px;
+}
+
+.brands {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.brands__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,15 +270,9 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 20px 0px;
   gap: 50px;
   -webkit-animation: scrollLine 10s linear infinite;
           animation: scrollLine 10s linear infinite;
-}
-
-.brands {
-  border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
 }
 
 @media (max-width: 528px) {
@@ -273,32 +282,16 @@ a {
 }
 
 @-webkit-keyframes scrollLine {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  50% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+  to {
+    -webkit-transform: translateX(calc(-100% - 50px));
+            transform: translateX(calc(-100% - 50px));
   }
 }
 
 @keyframes scrollLine {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  50% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+  to {
+    -webkit-transform: translateX(calc(-100% - 50px));
+            transform: translateX(calc(-100% - 50px));
   }
 }
 .steps {
@@ -447,10 +440,6 @@ a {
 .works {
   padding: 30px 0px 50px 0px;
   border-top: 1px solid #ddd;
-}
-
-.works ._container {
-  max-width: 1745px;
 }
 
 .works__title {
@@ -968,10 +957,6 @@ a {
   }
   .who__blocks {
     gap: 20px;
-    margin-bottom: 0px;
-  }
-  .who__buttons {
-    display: none;
   }
   .who__number {
     font-size: 24px;
@@ -1024,10 +1009,6 @@ a {
   }
   .who__blocks {
     gap: 20px;
-    margin-bottom: 0px;
-  }
-  .who__buttons {
-    display: none;
   }
   .who__number {
     font-size: 24px;
@@ -1061,16 +1042,15 @@ a {
   .who__text-mobile {
     font-size: 14px;
   }
+  .who__buttons {
+    gap: 5px;
+  }
   .who__number {
     font-size: 20px;
     margin-bottom: 5px;
   }
   .who__subtext {
     font-size: 12px;
-  }
-  .who-pagination .swiper-pagination-bullet {
-    height: 2px;
-    width: 2px;
   }
 }
 .footer {
@@ -1199,7 +1179,7 @@ a {
      -moz-column-gap: 6px;
           column-gap: 6px;
   row-gap: 15px;
-  max-width: 377px;
+  max-width: 475px;
 }
 .tags-footer__item {
   float: 0 1 25%;
@@ -1403,26 +1383,31 @@ a {
   color: #777;
 }
 .contacts__input::-webkit-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__input::-moz-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__input:-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__input::-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__input::placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
@@ -1442,26 +1427,31 @@ a {
   margin-top: 10px;
 }
 .contacts__textarea::-webkit-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__textarea::-moz-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__textarea:-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__textarea::-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
 }
 .contacts__textarea::placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
@@ -1688,16 +1678,13 @@ a {
     gap: 8px;
     padding: 13px 8px;
   }
+  .contacts__button svg {
+    height: 11px;
+    width: 11px;
+  }
   .contacts__button-text {
     font-size: 10px;
     line-height: 140%;
-  }
-  .contacts__arrow {
-    width: 11px;
-    height: 11px;
-  }
-  .contacts__arrow img {
-    width: 100%;
   }
   .info-contacts__title-mobile {
     text-align: center;
@@ -1715,7 +1702,7 @@ a {
   }
 }
 .home {
-  padding: 60px 0px;
+  padding: 140px 0px;
   border-bottom: 1px solid #ddd;
 }
 .home__texts {
@@ -1933,7 +1920,7 @@ a {
 }
 @media (max-width: 528px) {
   .home {
-    padding: 15px 0px;
+    padding: 95px 0px;
   }
   .home__image {
     display: none;
@@ -2029,7 +2016,7 @@ a {
   }
 }
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 82px;
   left: 0;
   border-right: 1px solid #ddd;
@@ -2037,6 +2024,7 @@ a {
   padding: 109px 40px 141px 40px;
   background-color: #fff;
   width: 106px;
+  z-index: 9;
 }
 .sidebar__content {
   display: -webkit-box;
@@ -2059,7 +2047,8 @@ a {
   gap: 106px;
 }
 .sidebar__link {
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-SemiBold", sans-serif;
+  font-weight: 600;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   font-size: 18px;
@@ -2092,10 +2081,13 @@ a {
   }
 }
 .header {
+  position: fixed;
   padding: 21px 0px;
+  width: 100%;
   border-bottom: 1px solid #ddd;
   z-index: 12;
   height: 82px;
+  background-color: #fff;
 }
 .header__container {
   display: -webkit-box;
@@ -2136,6 +2128,9 @@ a {
   color: #1c1c1c;
   font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 500;
+}
+.header__link:hover {
+  text-decoration: underline;
 }
 .header__info {
   display: -webkit-box;
@@ -2754,34 +2749,34 @@ a {
   height: 176px;
 }
 .form-popup__textarea::-webkit-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  font-family: "Gilroy-Regular", sans-serif;
 }
 .form-popup__textarea::-moz-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  font-family: "Gilroy-Regular", sans-serif;
 }
 .form-popup__textarea:-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  font-family: "Gilroy-Regular", sans-serif;
 }
 .form-popup__textarea::-ms-input-placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  font-family: "Gilroy-Regular", sans-serif;
 }
 .form-popup__textarea::placeholder {
+  font-family: "Gilroy-Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  font-family: "Gilroy-Regular", sans-serif;
 }
 .form-popup__button {
   cursor: pointer;
@@ -3266,7 +3261,7 @@ a {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   display: none;
   width: 100%;
   top: 82px;
@@ -3344,7 +3339,7 @@ a {
 .menu-mobile {
   position: fixed;
   z-index: 10;
-  top: 80px;
+  top: 74px;
   background-color: #fff;
   height: calc(100% - 80px);
   overflow: scroll;
@@ -3447,7 +3442,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  text-align: center;
   color: #1c1c1c;
 }
 .contacts-menu__button {
@@ -3487,11 +3481,16 @@ contacts-menu__button:hover .contacts-menu__button-arrow path {
 }
 
 .link-submenu__content {
-  display: none;
-  margin-top: 20px;
+  margin-top: 0px;
+  opacity: 0;
+  height: 0px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .link-submenu__content.active {
-  display: block;
+  height: auto;
+  opacity: 100;
+  margin-top: 20px;
 }
 .link-submenu__item {
   display: -webkit-box;
@@ -3517,12 +3516,17 @@ contacts-menu__button:hover .contacts-menu__button-arrow path {
 }
 
 .content-menu {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #ddd;
-  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  height: 0px;
 }
 .content-menu.active {
-  display: block;
+  height: auto;
+  opacity: 100;
+  padding-bottom: 20px;
 }
 .content-menu__back {
   display: -webkit-box;
