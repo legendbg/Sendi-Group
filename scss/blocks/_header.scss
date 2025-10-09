@@ -67,6 +67,7 @@
 
     &__close-burger {
         display: none;
+        width: 23px;
     }
 
     &__button {
@@ -97,6 +98,7 @@
 
     &__burger {
         display: none;
+        width: 23px;
         flex-direction: column;
         gap: 7px;
 

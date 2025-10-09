@@ -2177,6 +2177,7 @@ a {
 }
 .header__close-burger {
   display: none;
+  width: 23px;
 }
 .header__button {
   cursor: pointer;
@@ -2209,6 +2210,7 @@ a {
 }
 .header__burger {
   display: none;
+  width: 23px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

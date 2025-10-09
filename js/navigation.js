@@ -9,6 +9,10 @@ menux.forEach((e, i, a) => {
             if (e.target.id === sections[i].classList[0]) {
                 const y = sections[i].getBoundingClientRect().top + window.scrollY + -100;
 
+                menuMobile.classList.toggle("active-menu");
+                header.classList.toggle("active");
+                body.classList.toggle("active");
+
                 window.scrollTo({ top: y, behavior: "smooth" });
             }
         }
