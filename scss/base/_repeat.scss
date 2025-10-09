@@ -42,7 +42,6 @@
     transition: all 0.2s linear;
 }
 
-
 .button-white__text {
     font-weight: 600;
     font-size: 14px;
@@ -50,6 +49,7 @@
     text-transform: uppercase;
     text-align: center;
     font-family: "Gilroy-SemiBold", sans-serif;
+    white-space: nowrap;
 }
 
 .button-black {
@@ -72,6 +72,7 @@
     text-transform: uppercase;
     text-align: center;
     font-family: "Gilroy-SemiBold", sans-serif;
+    white-space: nowrap;
 }
 
 .button-black:hover {

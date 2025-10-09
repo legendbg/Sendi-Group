@@ -225,9 +225,11 @@ contacts-menu__button:hover .contacts-menu__button-arrow path {
         opacity: 0;
         height: 0px;
         transition: all 0.2s linear;
+        visibility: hidden;
 
         &.active {
             height: auto;
+            visibility: visible;
             opacity: 100;
             margin-top: 20px;
         }
@@ -259,8 +261,12 @@ contacts-menu__button:hover .contacts-menu__button-arrow path {
     opacity: 0;
     transition: all 0.2s linear;
     height: 0px;
+    visibility: hidden;
+    // display: none;
 
     &.active {
+        // display: block;
+        visibility: visible;
         height: auto;
         opacity: 100;
         padding-bottom: 20px;

@@ -7,17 +7,19 @@
     padding: 109px 40px 141px 40px;
     background-color: #fff;
     width: 106px;
+    height: 100%;
     z-index: 9;
 
     &__content {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     &__links {
         display: flex;
         flex-direction: column;
-        margin-bottom: 493px;
         gap: 106px;
     }
     
