@@ -35,6 +35,7 @@
 }
 
 .products__tab {
+    cursor: pointer;
     font-family: "Gilroy-Medium", sans-serif;
     font-size: 14px;
     line-height: 115%;
@@ -44,6 +45,14 @@
     border-radius: 3px;
     padding: 12px 31px;
     color: #282828;
+    transition: all 0.2s linear;
+}
+
+.products__tab:hover {
+    border-radius: 3px;
+    background-color: #f80 !important;
+    border: 1px solid #f80 !important;
+    color: #fff;
 }
 
 .active-title {

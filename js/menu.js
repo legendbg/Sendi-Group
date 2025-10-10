@@ -4,13 +4,12 @@ const menus = document.querySelectorAll(".menu");
 menuButtons.forEach((menuButton) => {
     menuButton.addEventListener("click", (e) => {
         e.preventDefault();
+    });
+});
 
-        if (e.target.classList.contains("active")) {
-            e.target.classList.remove("active");
-            menus.forEach((el) => el.classList.remove("show"));
-
-            return;
-        }
+menuButtons.forEach((menuButton) => {
+    menuButton.addEventListener("mouseenter", (e) => {
+        e.preventDefault();
 
         menus.forEach((el) => el.classList.remove("show"));
         menuButtons.forEach((el) => el.classList.remove("active"));
@@ -23,11 +22,22 @@ menuButtons.forEach((menuButton) => {
                 document.addEventListener("click", (e) => {
                     if (e.target === menu) {
                         menu.classList.remove("show");
-                        menuButton.classList.remove("active")
+                        menuButton.classList.remove("active");
                     }
+                });
+
+                // menu.addEventListener("mouseout", (e) => {
+                //     if (!menu.contains(e.target)) {
+                //         menu.classList.remove("show");
+                //         menuButton.classList.remove("active");
+                //     }
+                // });
+
+                menuButton.addEventListener("click", (e) => {
+                    menu.classList.remove("show");
+                    menuButton.classList.remove("active");
                 });
             }
         });
     });
 });
-

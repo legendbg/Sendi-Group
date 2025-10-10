@@ -343,9 +343,9 @@ a {
 }
 
 .steps__name {
-  font-family: "Gilroy-Medium", sans-serif;
+  font-family: "Gilroy-SemiBold", sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .steps__number-container {
@@ -635,6 +635,7 @@ a {
 }
 
 .goods__tab {
+  cursor: pointer;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   line-height: 115%;
@@ -645,6 +646,15 @@ a {
   padding: 12px 13px;
   color: #282828;
   padding: 12px 31px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.goods__tab:hover {
+  border-radius: 3px;
+  background-color: #f80 !important;
+  border: 1px solid #f80 !important;
+  color: #fff;
 }
 
 .active-title {
@@ -2927,6 +2937,7 @@ a {
 }
 
 .products__tab {
+  cursor: pointer;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   line-height: 115%;
@@ -2936,6 +2947,15 @@ a {
   border-radius: 3px;
   padding: 12px 31px;
   color: #282828;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.products__tab:hover {
+  border-radius: 3px;
+  background-color: #f80 !important;
+  border: 1px solid #f80 !important;
+  color: #fff;
 }
 
 .active-title {
@@ -3366,7 +3386,7 @@ a {
   z-index: 10;
   top: 74px;
   background-color: #fff;
-  height: calc(100% - 80px);
+  height: calc(100% - 74px);
   overflow: scroll;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
