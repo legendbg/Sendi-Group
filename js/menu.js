@@ -27,10 +27,8 @@ menuButtons.forEach((menuButton) => {
                 });
 
                 menu.addEventListener("mouseleave", (e) => {
-                    // if (!menu.contains(e.target)) {
-                        menu.classList.remove("show");
-                        menuButton.classList.remove("active");
-                    // }
+                    menu.classList.remove("show");
+                    menuButton.classList.remove("active");
                 });
 
                 menuButton.addEventListener("click", (e) => {
@@ -39,5 +37,10 @@ menuButtons.forEach((menuButton) => {
                 });
             }
         });
+    });
+
+    menuButton.addEventListener("mouseleave", (e) => {
+        menus.forEach((el) => el.classList.remove("show"));
+        menuButtons.forEach((el) => el.classList.remove("active"));
     });
 });

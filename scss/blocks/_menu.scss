@@ -2,16 +2,23 @@
     position: fixed;
     display: none;
     width: 100%;
-    top: 82px;
-    background-color: #f7f7f7;
+    top: 52px;
     z-index: 100;
-    padding: 20px 30px 50px 30px;
+    padding-top: 30px;
+    left: 0;
+    // padding-top: 30px;
 
+    &__main {
+        width: 100%;
+        background-color: #f7f7f7;
+    }
+    
     &.show {
         display: block;
     }
-
+    
     &__container {
+        padding: 20px 30px 50px 30px;
         margin-left: -12px;
         display: inline-block;
     }
