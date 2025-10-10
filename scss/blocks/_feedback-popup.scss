@@ -40,7 +40,7 @@
             font-family: "Bold", sans-serif;
         }
     }
-    
+
     &__text {
         margin-bottom: 13px;
         font-weight: 400;
@@ -156,6 +156,10 @@
 
 @media (max-width: 528px) {
     .feedback-popup {
+        align-items: flex-start;
+        overflow-y: auto;
+        padding: 30px 10px;
+
         &__content {
             padding: 20px 15px;
             border-radius: 8px;
@@ -173,17 +177,17 @@
             line-height: 100%;
             margin-bottom: 20px;
         }
-        
+
         &__text {
             margin-bottom: 20px;
             font-size: 14px;
-            line-height: 214%;
+            line-height: 174%;
         }
     }
 
     .form-popup {
         &__fields {
-            margin-bottom: 29px;
+            margin-bottom: 25px;
         }
 
         &__field {
@@ -198,6 +202,7 @@
 
         &__textarea {
             padding: 16px 15px;
+            height: 175px;
         }
     }
 }

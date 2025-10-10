@@ -2843,6 +2843,13 @@ a {
 }
 
 @media (max-width: 528px) {
+  .feedback-popup {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-y: auto;
+    padding: 30px 10px;
+  }
   .feedback-popup__content {
     padding: 20px 15px;
     border-radius: 8px;
@@ -2861,10 +2868,10 @@ a {
   .feedback-popup__text {
     margin-bottom: 20px;
     font-size: 14px;
-    line-height: 214%;
+    line-height: 174%;
   }
   .form-popup__fields {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
   }
   .form-popup__field:not(:last-child) {
     margin-bottom: 25px;
@@ -2874,6 +2881,7 @@ a {
   }
   .form-popup__textarea {
     padding: 16px 15px;
+    height: 175px;
   }
 }
 .products {
