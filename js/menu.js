@@ -26,12 +26,12 @@ menuButtons.forEach((menuButton) => {
                     }
                 });
 
-                // menu.addEventListener("mouseout", (e) => {
-                //     if (!menu.contains(e.target)) {
-                //         menu.classList.remove("show");
-                //         menuButton.classList.remove("active");
-                //     }
-                // });
+                menu.addEventListener("mouseleave", (e) => {
+                    // if (!menu.contains(e.target)) {
+                        menu.classList.remove("show");
+                        menuButton.classList.remove("active");
+                    // }
+                });
 
                 menuButton.addEventListener("click", (e) => {
                     menu.classList.remove("show");
