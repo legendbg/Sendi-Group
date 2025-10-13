@@ -264,6 +264,7 @@ a {
   transition: all 0.2s linear;
   -webkit-transform: scale(100%);
           transform: scale(100%);
+  cursor: pointer;
 }
 
 .scale-text:hover {
@@ -2104,6 +2105,7 @@ a {
 .home .button-black {
   background: #3f3f3f;
   padding: 17px 22px 17px 16px;
+  color: #fff;
 }
 .home .button-black__text {
   font-weight: 600;
@@ -2111,7 +2113,15 @@ a {
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+}
+
+.home .button-black:hover {
+  background-color: #fff;
+  color: #282828;
+}
+
+.home .button-black:hover .button-black__icon path {
+  fill: #282828;
 }
 
 .home .button-white {
@@ -2185,11 +2195,17 @@ a {
 .sidebar__link {
   font-family: "Gilroy-SemiBold", sans-serif;
   font-weight: 600;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg) scale(100%);
+          transform: rotate(-90deg) scale(100%);
   font-size: 18px;
   line-height: 144%;
   color: #282828;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.sidebar__link:hover {
+  -webkit-transform: rotate(-90deg) scale(105%);
+          transform: rotate(-90deg) scale(105%);
 }
 .sidebar__socials {
   display: -webkit-box;

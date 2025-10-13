@@ -337,6 +337,7 @@
 .home .button-black {
     background: #3f3f3f;
     padding: 17px 22px 17px 16px;
+    color: #fff;
 
     &__text {
         font-weight: 600;
@@ -344,8 +345,16 @@
         line-height: 100%;
         text-transform: uppercase;
         text-align: center;
-        color: #fff;
     }
+}
+
+.home .button-black:hover {
+    background-color: #fff;
+    color: #282828;
+}
+
+.home .button-black:hover .button-black__icon path {
+    fill: #282828;
 }
 
 .home .button-white {

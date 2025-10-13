@@ -26,10 +26,15 @@
     &__link {
         font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 600;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) scale(100%);
         font-size: 18px;
         line-height: 144%;
         color: #282828;
+        transition: all 0.2s linear;
+
+        &:hover {
+            transform: rotate(-90deg) scale(105%);
+        }
     }
 
     &__socials {
