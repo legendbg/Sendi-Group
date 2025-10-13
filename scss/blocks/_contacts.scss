@@ -9,7 +9,8 @@
     &__content {
         display: flex;
         align-items: flex-start;
-        gap: 75px;
+        justify-content: center;
+        gap: 48px;
     }
 
     &__form {

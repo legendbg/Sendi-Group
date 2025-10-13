@@ -127,3 +127,21 @@
 .underline {
     text-decoration: underline;
 }
+
+.scale {
+    transition: all .2s linear;
+    transform: scale(100%);
+}
+
+.scale:hover {
+    transform: scale(120%);
+}
+
+.scale-text {
+    transition: all .2s linear;
+    transform: scale(100%);
+}
+
+.scale-text:hover {
+    transform: scale(105%);
+}

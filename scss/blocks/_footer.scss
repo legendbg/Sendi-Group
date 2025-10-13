@@ -17,7 +17,7 @@
 
 .info-footer {
     &__logo {
-        margin-bottom: 20px;
+        margin-bottom: 28px;
     }
 
     &__text {
@@ -37,6 +37,8 @@
 }
 
 .about-footer {
+    margin-top: 40px;
+
     &__title {
         font-family: "Gilroy-SemiBold", sans-serif;
         font-weight: 600;
@@ -76,6 +78,8 @@
 }
 
 .services-footer {
+    margin-top: 45px;
+
     &__item {
         display: flex;
         align-items: center;
@@ -138,6 +142,8 @@
 }
 
 .contacts-footer {
+    max-width: 400px;
+
     &__name {
         font-family: "Gilroy-Medium", sans-serif;
         font-size: 16px;
@@ -145,21 +151,33 @@
         letter-spacing: -0.02em;
         color: rgba(40, 40, 40, 0.8);
         margin-bottom: 9px;
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+
+        img {
+            width: 100%;
+        }
     }
 
     &__item {
         display: flex;
-        align-items: center;
         gap: 10px;
         margin-bottom: 17px;
+        align-items: center;
     }
 
     &__text {
         font-family: "Gilroy-Medium", sans-serif;
         font-weight: 500;
         font-size: 18px;
-        line-height: 78%;
-        text-align: center;
+        line-height: 128%;
         color: #1c1c1c;
     }
 }

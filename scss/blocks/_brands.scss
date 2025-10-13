@@ -2,6 +2,7 @@
     padding: 20px 0px;
     display: flex;
     align-items: baseline;
+    justify-content: flex-end;
     gap: 50px;
 }
 
@@ -15,6 +16,10 @@
         justify-content: flex-start;
         gap: 50px;
         animation: scrollLine 10s linear infinite;
+
+        @media (max-width: 528px) {
+            animation: scrollLine-mobile 10s linear infinite;
+        }
     }
 }
 
@@ -28,6 +33,12 @@
 
 @keyframes scrollLine {
     to {
-        transform: translateX(calc(-100% - 50px));
+        transform: translateX(calc(100% + 50px));
+    }
+}
+
+@keyframes scrollLine-mobile {
+    to {
+        transform: translateX(calc(100% + 30px));
     }
 }
