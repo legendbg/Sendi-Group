@@ -48,6 +48,8 @@
     color: #282828;
     padding: 12px 31px;
     transition: all 0.2s linear;
+    font-family: "Gilroy-SemiBold", sans-serif;
+    font-weight: 500;
 }
 
 .products__tab:hover {
@@ -134,11 +136,11 @@
 }
 
 .prev-products.swiper-button-disabled {
-  display: none;
+    display: none;
 }
 
 .next-products.swiper-button-disabled {
-  display: none;
+    display: none;
 }
 
 .active-sub-tab-content {
