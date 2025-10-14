@@ -129,7 +129,7 @@
 }
 
 .scale {
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     transform: scale(100%);
 }
 
@@ -137,8 +137,26 @@
     transform: scale(120%);
 }
 
+// .scale-phone input {
+//     transition: all 0.2s linear;
+//     transform: scale(100%);
+// }
+
+// .scale-phone .iti__selected-country-primary {
+//     transition: all 0.2s linear;
+//     transform: scale(100%);
+// }
+
+// .iti__selected-country-primary:hover + input {
+//     transform: scale(105%);
+// }
+
+// .scale-phone input:hover {
+//     transform: scale(105%);
+// }
+
 .scale-text {
-    transition: all .2s linear;
+    transition: all 0.2s linear;
     transform: scale(100%);
     cursor: pointer;
 }
