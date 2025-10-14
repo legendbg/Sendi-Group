@@ -27,9 +27,9 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    border: 1px solid #282828;
+    border: 2px solid #282828;
     transition: all 0.2s linear;
-    padding: 20px;
+    padding: 18px 20px;
     color: #000;
     border-radius: 5px;
 }
@@ -58,8 +58,8 @@
     align-items: center;
     gap: 15px;
     background-color: #282828;
-    border: 1px solid #282828;
-    padding: 20px;
+    border: 2px solid #282828;
+    padding: 18px 20px;
     border-radius: 5px;
     color: #fff;
     transition: all 0.2s linear;
@@ -76,22 +76,21 @@
 }
 
 .button-black:hover {
-    background-color: #fff;
-    color: #282828;
+    background-color: #282828 !important;
+    border-color: #f80;
+    color: #fff !important;
 }
 
 .button-black:hover .button-black__icon path {
-    fill: #282828;
+    fill: #f80 !important;
 }
 
 .button-white:hover {
     background-color: #f80;
-    border-color: #f80;
-    color: #fff;
 }
 
 .button-white:hover .button-white__icon path {
-    fill: #fff;
+    fill: #282828;
 }
 
 @media (max-width: 528px) {
@@ -136,24 +135,6 @@
 .scale:hover {
     transform: scale(120%);
 }
-
-// .scale-phone input {
-//     transition: all 0.2s linear;
-//     transform: scale(100%);
-// }
-
-// .scale-phone .iti__selected-country-primary {
-//     transition: all 0.2s linear;
-//     transform: scale(100%);
-// }
-
-// .iti__selected-country-primary:hover + input {
-//     transform: scale(105%);
-// }
-
-// .scale-phone input:hover {
-//     transform: scale(105%);
-// }
 
 .scale-text {
     transition: all 0.2s linear;

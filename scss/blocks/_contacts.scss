@@ -88,7 +88,7 @@
         display: flex;
         align-items: center;
         gap: 25px;
-        border: 1px solid #282828;
+        border: 2px solid #282828;
         border-radius: 5px;
         padding: 19px 30px;
         background-color: #282828;
@@ -110,13 +110,13 @@
 }
 
 .contacts__button:hover {
-    background-color: #f80;
+    background-color: #282828 !important;
     border-color: #f80;
-    color: #fff;
+    color: #fff !important;
 }
 
-.contacts__button:hover .contacts__button-arrow path {
-    fill: #fff;
+.contacts__button:hover .contacts__arrow path {
+    fill: #f80 !important;
 }
 
 .info-contacts {

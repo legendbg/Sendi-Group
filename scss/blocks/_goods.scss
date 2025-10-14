@@ -23,11 +23,12 @@
 .goods__tab {
     cursor: pointer;
     font-family: "Gilroy-Medium", sans-serif;
+    font-weight: 500;
     font-size: 14px;
     line-height: 115%;
     text-align: center;
     color: #fff;
-    border: 1px solid #3f3f3f;
+    border: 2px solid #3f3f3f;
     border-radius: 3px;
     padding: 12px 13px;
     color: #282828;
@@ -38,15 +39,11 @@
 .goods__tab:hover {
     border-radius: 3px;
     background-color: #f80 !important;
-    border: 1px solid #f80 !important;
-    color: #fff;
 }
 
 .active-title {
     border-radius: 3px;
     background-color: #f80 !important;
-    border: 1px solid #f80 !important;
-    color: #fff;
 }
 
 .goods__slider {

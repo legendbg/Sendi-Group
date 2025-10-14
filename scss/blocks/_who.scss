@@ -78,6 +78,8 @@
 .who__buttons {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 670px;
     gap: 25px;
 }
 

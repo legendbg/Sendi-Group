@@ -134,6 +134,8 @@
         color: #fff;
         background-color: #282828;
         transition: all 0.2s linear;
+        border: 2px solid #282828;
+
     }
 
     &__button-icon {
@@ -142,13 +144,13 @@
 }
 
 .form-popup__button:hover {
-    background-color: #f80;
+    background-color: #282828 !important;
     border-color: #f80;
-    color: #fff;
+    color: #fff !important;
 }
 
-.form-popup__button:hover .form-popup__button-icon path {
-    fill: #fff;
+.form-popup__button:hover .form-popup__buton-icon path {
+    fill: #f80 !important;
 }
 
 .feedback-popup.show {
