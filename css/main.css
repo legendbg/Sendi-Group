@@ -2245,9 +2245,23 @@ a {
   margin-bottom: 350px;
 }
 
-@media (max-width: 1750px) {
+@media (max-width: 1250px) {
   .sidebar {
     display: none;
+  }
+  section ._container {
+    padding-left: 15px !important;
+  }
+  .footer ._container {
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 1750px) {
+  section ._container {
+    padding-left: 140px;
+  }
+  .footer ._container {
+    padding-left: 140px;
   }
 }
 .header {
