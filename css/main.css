@@ -1826,6 +1826,7 @@ a {
   margin-left: 70px;
 }
 .home__content {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1841,7 +1842,7 @@ a {
 .home__line {
   margin-top: 145px;
   width: 35px;
-  height: 2px;
+  height: 3px;
   background-color: #f80;
 }
 .home__uptext {
@@ -1909,6 +1910,77 @@ a {
   margin-top: 10px;
 }
 
+.prev-home {
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(100%);
+          transform: translateY(-50%) scale(100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 8;
+}
+.prev-home:hover {
+  -webkit-transform: translateY(-50%) scale(110%);
+          transform: translateY(-50%) scale(110%);
+}
+
+.prev-home.active {
+  -webkit-animation: buttonScale 0.4s linear 1;
+          animation: buttonScale 0.4s linear 1;
+}
+
+.next-home.active {
+  -webkit-animation: buttonScale 0.4s linear 1;
+          animation: buttonScale 0.4s linear 1;
+}
+
+.next-home {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(100%);
+          transform: translateY(-50%) scale(100%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 8;
+}
+.next-home:hover {
+  -webkit-transform: translateY(-50%) scale(110%);
+          transform: translateY(-50%) scale(110%);
+}
+
+@-webkit-keyframes buttonScale {
+  0% {
+    -webkit-transform: translateY(-50%) scale(100%);
+            transform: translateY(-50%) scale(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%) scale(110%);
+            transform: translateY(-50%) scale(110%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(100%);
+            transform: translateY(-50%) scale(100%);
+  }
+}
+
+@keyframes buttonScale {
+  0% {
+    -webkit-transform: translateY(-50%) scale(100%);
+            transform: translateY(-50%) scale(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-50%) scale(110%);
+            transform: translateY(-50%) scale(110%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(100%);
+            transform: translateY(-50%) scale(100%);
+  }
+}
 .clients-home__number {
   font-weight: 500;
   font-size: 28px;
@@ -1983,6 +2055,12 @@ a {
   }
   .clients-home__text {
     font-size: 14px;
+  }
+  .next-home {
+    display: none;
+  }
+  .prev-home {
+    display: none;
   }
   .home-pagination .swiper-pagination-bullet {
     width: 68px;

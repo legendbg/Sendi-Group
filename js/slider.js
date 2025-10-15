@@ -4,9 +4,29 @@ const homeSlider = new Swiper(".home-slider", {
     autoplay: {
         delay: 5000,
     },
+    navigation: {
+        prevEl: ".prev-home",
+        nextEl: ".next-home",
+    },
     pagination: {
         el: ".home-pagination",
     },
+    on: {
+        slideChangeTransitionEnd: function () {
+            const nextButton = document.querySelector(".next-home");
+
+            nextButton.classList.add("active")
+        },
+        slideChangeTransitionStart: function () {
+            const nextButton = document.querySelector(".next-home");
+
+            nextButton.classList.remove("active")
+        }
+    },
+});
+
+homeSlider.on("slideTransitionEnd", function () {
+    console.log("okay");
 });
 
 const whoSlider = new Swiper(".who-slider", {
