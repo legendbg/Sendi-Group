@@ -15,13 +15,21 @@ const homeSlider = new Swiper(".home-slider", {
         slideChangeTransitionEnd: function () {
             const nextButton = document.querySelector(".next-home");
 
-            nextButton.classList.add("active")
+            nextButton.classList.add("active");
         },
         slideChangeTransitionStart: function () {
             const nextButton = document.querySelector(".next-home");
 
-            nextButton.classList.remove("active")
-        }
+            nextButton.classList.remove("active");
+        },
+    },
+});
+
+const swiper = new Swiper(".works-slider", {
+    slidesPerView: 4,
+    navigation: {
+        nextEl: ".next-work",
+        prevEl: ".prev-work",
     },
 });
 

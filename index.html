@@ -80,7 +80,7 @@
             <header class="header">
                 <div class="header__container _container">
                     <div class="header__content">
-                        <div class="header__logo">
+                        <div class="header__logo scale-text" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'});">
                             <img src="./images/logo.png" alt="" />
                         </div>
                         <nav class="header__nav">
@@ -95,7 +95,6 @@
                                                 <div class="menu__content">
                                                     <div class="menu__row">
                                                         <div class="menu__item item-menu">
-                                                            <div class="item-menu__name">Брендована продукція</div>
                                                             <ul class="item-menu__links">
                                                                 <li><a href="" class="item-menu__link">Шкіргалантерея</a></li>
                                                                 <li><a href="" class="item-menu__link">Трикотажна продукція</a></li>
@@ -111,7 +110,6 @@
                                                     </div>
                                                     <div class="menu__row">
                                                         <div class="menu__item item-menu">
-                                                            <div class="item-menu__name">Поліграфія</div>
                                                             <ul class="item-menu__links">
                                                                 <li><a href="" class="item-menu__link">Бейджи</a></li>
                                                                 <li><a href="" class="item-menu__link">Візитки</a></li>
@@ -144,7 +142,6 @@
                                                 <div class="menu__content">
                                                     <div class="menu__row">
                                                         <div class="menu__item item-menu">
-                                                            <div class="item-menu__name">Послуги</div>
                                                             <ul class="item-menu__links">
                                                                 <li><a href="" class="item-menu__link">Розробка ЛЕНДИНГУ</a></li>
                                                                 <li><a href="" class="item-menu__link">Розробка КООПЕРАТИВНОГО САЙТУ</a></li>
@@ -495,9 +492,6 @@
                             <div class="goods__tab tab-title scale-text">Категория 11</div>
                             <div class="goods__tab tab-title scale-text">Категория 12</div>
                         </div>
-                        <div class="prev-good swiper-button-disabled scale-text">
-                            <img src="./images/prev-button.svg" alt="" />
-                        </div>
                         <div class="goods__slider tab-content active-tab swiper" data-tab="1">
                             <div class="swiper-wrapper">
                                 <div class="goods__content swiper-slide">
@@ -641,10 +635,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="next-good scale-text">
-                            <img src="./images/next-button.svg" alt="" />
-                        </div>
+                                    <div class="prev-good swiper-button-disabled">
+                                    <img src="./images/prev-button.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="next-good">
+                                <img src="./images/next-button.svg" alt="" />
+                            </div>
                         <div class="goods__buttons">
                             <div class="works__button-white button-white contact-popup-button scale-text">
                                 <div class="button-white__text">Замовити послугу</div>
@@ -702,9 +699,6 @@
                                     <div class="products__tab product-sub-tab-title scale-text" data-tab="4.1">Поліграфія4</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="prev-products swiper-button-disabled scale-text">
-                            <img src="./images/prev-button.svg" alt="" />
                         </div>
                         <div class="products__slider swiper sub-tab-content active" data-tab="1.1">
                             <div class="swiper-wrapper">
@@ -817,6 +811,9 @@
                                     </div>
                                 </div>
                             </div>
+                                                    <div class="prev-products swiper-button-disabled scale-text">
+                            <img src="./images/prev-button.svg" alt="" />
+                        </div>
                         </div>
                         <div class="products__slider swiper sub-tab-content" data-tab="1.2">
                             <div class="swiper-wrapper">
@@ -1271,9 +1268,9 @@
                             <span class="bold">Якість</span> нашої <span class="bold">роботи</span> може
                             <span class="bold">підтвердити ряд великих компаній</span>
                         </h2>
-                        <div class="works__slides">
-                            <div class="works__content">
-                                <div class="works__item">
+                        <div class="works__slides works-slider swiper">
+                            <div class="works__content swiper-wrapper">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1285,7 +1282,7 @@
                                         Дякую!!!
                                     </p>
                                 </div>
-                                <div class="works__item">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1297,7 +1294,7 @@
                                         Дякую!!!
                                     </p>
                                 </div>
-                                <div class="works__item">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1309,7 +1306,7 @@
                                         Дякую!!!
                                     </p>
                                 </div>
-                                <div class="works__item">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1321,7 +1318,7 @@
                                         Дякую!!!
                                     </p>
                                 </div>
-                                <div class="works__item">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1333,7 +1330,7 @@
                                         Дякую!!!
                                     </p>
                                 </div>
-                                <div class="works__item">
+                                <div class="works__item swiper-slide">
                                     <div class="works__decor">
                                         <img src="./images/decor.png" alt="" />
                                     </div>
@@ -1345,6 +1342,12 @@
                                         Дякую!!!
                                     </p>
                                 </div>
+                            </div>
+                            <div class="next-work">
+                                <img src="./images/next-button.svg" alt="" />
+                            </div>
+                            <div class="prev-work">
+                                <img src="./images/prev-button.svg" alt="" />
                             </div>
                         </div>
                         <div class="works__buttons">
@@ -1475,7 +1478,7 @@
                             <div class="steps__item">
                                 <div class="steps__info">
                                     <div class="steps__name">Аналіз потреб та пропозиція</div>
-                                    <div class="steps__number-container active-number">
+                                    <div class="steps__number-container">
                                         <div class="steps__number">02</div>
                                     </div>
                                 </div>
@@ -1499,7 +1502,7 @@
                             <div class="steps__item">
                                 <div class="steps__info">
                                     <div class="steps__name">Реалізація проєкту “під ключ”</div>
-                                    <div class="steps__number-container active-number">
+                                    <div class="steps__number-container">
                                         <div class="steps__number">04</div>
                                     </div>
                                 </div>
@@ -1522,7 +1525,7 @@
                             <div class="steps__item">
                                 <div class="steps__info">
                                     <div class="steps__name">Завершення та передача результату</div>
-                                    <div class="steps__number-container active-number">
+                                    <div class="steps__number-container">
                                         <div class="steps__number">06</div>
                                     </div>
                                 </div>

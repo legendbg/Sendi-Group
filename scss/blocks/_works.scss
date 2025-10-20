@@ -15,12 +15,38 @@
     align-items: center;
     gap: 20px;
     margin-bottom: 25px;
-    animation: scrollRev 10s linear infinite;
-    animation-play-state: paused;
+    padding: 0px 0px 0px 60px;
+}
 
-    @media (max-width: 1020px) {
-        animation-duration: 20s;
-        animation-play-state: running;
+.prev-work {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%) scale(100%);
+    transition: all 0.2s linear;
+    z-index: 8;
+
+    &:hover {
+        transform: translateY(-50%) scale(110%);
+    }
+}
+
+.next-work {
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%) scale(100%);
+    transition: all 0.2s linear;
+    z-index: 8;
+
+    &:hover {
+        transform: translateY(-50%) scale(110%);
+    }
+
+    &.swiper-button-disabled {
+        display: none;
     }
 }
 
@@ -29,12 +55,16 @@
     box-shadow: 10px 10px 45px 0 rgba(0, 0, 0, 0.05);
     background: #fff;
     padding: 25px;
-    min-width: 391px;
+    width: 391px;
 }
 
 .works__slides {
     display: flex;
     gap: 20px;
+
+    &.swiper {
+        overflow: visible;
+    }
 }
 
 .works__decor {

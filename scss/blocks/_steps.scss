@@ -14,11 +14,16 @@
 }
 
 .steps__item {
+    cursor: pointer;
     flex: 0 1 100%;
     border: 1.5px solid #ddd;
     border-radius: 15px;
     padding: 20px;
     max-width: 470px;
+}
+
+.steps__item:hover .steps__number-container {
+    background-color: #f80;
 }
 
 .steps__info {
@@ -40,6 +45,7 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
+    transition: all 0.2s linear;
     background-color: #282828;
     justify-content: center;
 }

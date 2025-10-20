@@ -15,10 +15,10 @@
         align-items: center;
         justify-content: flex-start;
         gap: 50px;
-        animation: scrollLine 10s linear infinite;
+        animation: scrollLine 13s linear infinite;
 
         @media (max-width: 528px) {
-            animation: scrollLine-mobile 10s linear infinite;
+            animation: scrollLine-mobile 13s linear infinite;
         }
     }
 }

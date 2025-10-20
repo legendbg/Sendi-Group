@@ -16,9 +16,9 @@ if (mediaQueryList) {
 } else {
 }
 barAnimation.addEventListener("mouseenter", () => {
-    barAnimation.style.animationPlayState = "running";
+    barAnimation.style.animationPlayState = "paused";
 });
 
 barAnimation.addEventListener("mouseleave", () => {
-    barAnimation.style.animationPlayState = "paused";
+    barAnimation.style.animationPlayState = "running";
 });
