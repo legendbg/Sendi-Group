@@ -27,6 +27,7 @@ const homeSlider = new Swiper(".home-slider", {
 
 const swiper = new Swiper(".works-slider", {
     slidesPerView: 4,
+    spaceBetween: 20,
     navigation: {
         nextEl: ".next-work",
         prevEl: ".prev-work",
