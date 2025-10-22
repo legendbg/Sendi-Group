@@ -26,11 +26,22 @@ const homeSlider = new Swiper(".home-slider", {
 });
 
 const swiper = new Swiper(".works-slider", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
         nextEl: ".next-work",
         prevEl: ".prev-work",
+    },
+        breakpoints: {
+        1250: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3
+        },
+        528: {
+            slidesPerView: 2,
+        },
     },
 });
 
