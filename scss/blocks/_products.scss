@@ -54,7 +54,9 @@
 
 .products__tab:hover {
     border-radius: 3px;
-    background-color: #f80 !important;
+    background-color: #282828 !important;
+    border: 2px solid #f80;
+    color: #fff;
 }
 
 .active-title {

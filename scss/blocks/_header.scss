@@ -17,7 +17,7 @@
         display: flex;
         align-items: center;
         gap: 80px;
-        margin-left: -150px;
+        margin-left: -150px; 
     }
 
     &__logo {
@@ -121,10 +121,12 @@
 
 .header__button:hover {
     background-color: #f80;
+    border: 2px solid #f80;
+    color: #fff;
 }
 
 .header__button:hover .header__button-arrow path {
-    fill: #282828;
+    fill: #fff;
 }
 
 .link-products {

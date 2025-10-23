@@ -76,21 +76,23 @@
 }
 
 .button-black:hover {
-    background-color: #282828 !important;
+    background-color: #f80 !important; 
     border-color: #f80;
     color: #fff !important;
 }
 
 .button-black:hover .button-black__icon path {
-    fill: #f80 !important;
+    fill: #fff !important;
 }
 
 .button-white:hover {
-    background-color: #f80;
+    background-color: #282828;
+    border: 2px solid #f80;
+    color: #fff;
 }
 
 .button-white:hover .button-white__icon path {
-    fill: #282828;
+    fill: #f80;
 }
 
 @media (max-width: 528px) {

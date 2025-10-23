@@ -199,21 +199,23 @@ a {
 }
 
 .button-black:hover {
-  background-color: #282828 !important;
+  background-color: #f80 !important;
   border-color: #f80;
   color: #fff !important;
 }
 
 .button-black:hover .button-black__icon path {
-  fill: #f80 !important;
+  fill: #fff !important;
 }
 
 .button-white:hover {
-  background-color: #f80;
+  background-color: #282828;
+  border: 2px solid #f80;
+  color: #fff;
 }
 
 .button-white:hover .button-white__icon path {
-  fill: #282828;
+  fill: #f80;
 }
 
 @media (max-width: 528px) {
@@ -740,7 +742,9 @@ a {
 
 .goods__tab:hover {
   border-radius: 3px;
-  background-color: #f80 !important;
+  background-color: #282828 !important;
+  border: 2px solid #f80;
+  color: #fff;
 }
 
 .active-title {
@@ -1646,13 +1650,13 @@ a {
 }
 
 .contacts__button:hover {
-  background-color: #282828 !important;
+  background-color: #f80 !important;
   border-color: #f80;
   color: #fff !important;
 }
 
 .contacts__button:hover .contacts__arrow path {
-  fill: #f80 !important;
+  fill: #fff !important;
 }
 
 .info-contacts {
@@ -2541,10 +2545,12 @@ a {
 
 .header__button:hover {
   background-color: #f80;
+  border: 2px solid #f80;
+  color: #fff;
 }
 
 .header__button:hover .header__button-arrow path {
-  fill: #282828;
+  fill: #fff;
 }
 
 .link-products {
@@ -3142,13 +3148,13 @@ a {
 }
 
 .form-popup__button:hover {
-  background-color: #282828 !important;
+  background-color: #f80 !important;
   border-color: #f80;
   color: #fff !important;
 }
 
 .form-popup__button:hover .form-popup__buton-icon path {
-  fill: #f80 !important;
+  fill: #fff !important;
 }
 
 .feedback-popup.show {
@@ -3262,7 +3268,9 @@ a {
 
 .products__tab:hover {
   border-radius: 3px;
-  background-color: #f80 !important;
+  background-color: #282828 !important;
+  border: 2px solid #f80;
+  color: #fff;
 }
 
 .active-title {

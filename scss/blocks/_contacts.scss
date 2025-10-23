@@ -107,16 +107,16 @@
         text-transform: uppercase;
         text-align: center;
     }
-}
+} 
 
 .contacts__button:hover {
-    background-color: #282828 !important;
+    background-color: #f80 !important;
     border-color: #f80;
     color: #fff !important;
 }
 
 .contacts__button:hover .contacts__arrow path {
-    fill: #f80 !important;
+    fill: #fff !important;
 }
 
 .info-contacts {
