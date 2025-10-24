@@ -22,6 +22,7 @@
 
     &__text {
         font-family: "Gilroy-Medium", sans-serif;
+        font-weight: 500;
         font-size: 16px;
         line-height: 106%;
         letter-spacing: 0em;
@@ -109,7 +110,8 @@
 
 .tags-footer {
     &__title {
-        font-family: "Gilroy-Medium", sans-serif;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-weight: 500;
         font-size: 16px;
         font-weight: 500;
         line-height: 150%;
@@ -128,13 +130,14 @@
 
     &__item {
         float: 0 1 25%;
-        border: 1px solid #424046;
+        border: 2px solid #424046;
         border-radius: 100px;
         padding: 6px 10px;
     }
 
     &__text {
-        font-family: "Gilroy-Medium", sans-serif;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-weight: 500;
         font-size: 14px;
         letter-spacing: -0.02em;
         color: #282828;
@@ -145,7 +148,8 @@
     max-width: 400px;
 
     &__name {
-        font-family: "Gilroy-Medium", sans-serif;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-weight: 500;
         font-size: 16px;
         line-height: 150%;
         letter-spacing: -0.02em;

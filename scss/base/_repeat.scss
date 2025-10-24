@@ -32,6 +32,10 @@
     padding: 18px 20px;
     color: #000;
     border-radius: 5px;
+    width: 100%;
+    max-width: 322px;
+    justify-content: center;
+    text-align: center;
 }
 
 .button-white__icon path {
@@ -63,6 +67,10 @@
     border-radius: 5px;
     color: #fff;
     transition: all 0.2s linear;
+    width: 100%;
+    max-width: 322px;
+    justify-content: center;
+    text-align: center;
 }
 
 .button-black__text {
@@ -76,7 +84,7 @@
 }
 
 .button-black:hover {
-    background-color: #f80 !important; 
+    background-color: #f80 !important;
     border-color: #f80;
     color: #fff !important;
 }
@@ -146,4 +154,8 @@
 
 .scale-text:hover {
     transform: scale(105%);
+}
+
+.bold-text {
+    font-weight: 700;
 }

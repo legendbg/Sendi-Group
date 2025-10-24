@@ -39,8 +39,10 @@
 
     &__label {
         font-family: "Gilroy-Medium", sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         color: #000;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-weight: 600;
     }
 
     &__input {
@@ -94,6 +96,10 @@
         background-color: #282828;
         color: #fff;
         transition: all 0.2s linear;
+        width: 100%;
+        max-width: 322px;
+        justify-content: center;
+        text-align: center;
     }
 
     &__button-arrow {
@@ -107,7 +113,7 @@
         text-transform: uppercase;
         text-align: center;
     }
-} 
+}
 
 .contacts__button:hover {
     background-color: #f80 !important;
@@ -153,7 +159,8 @@
     }
 
     &__name {
-        font-weight: 400;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-weight: 600;
         font-size: 18px;
         line-height: 144%;
         color: #000;

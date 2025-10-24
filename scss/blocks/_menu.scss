@@ -12,11 +12,11 @@
         width: 100%;
         background-color: #f7f7f7;
     }
-    
+
     &.show {
         display: block;
     }
-    
+
     &__container {
         padding: 20px 30px 50px 30px;
         margin-left: -12px;
@@ -210,6 +210,10 @@
         text-align: center;
         color: #fff;
         transition: all 0.2s linear;
+        width: 100%;
+        max-width: 322px;
+        justify-content: center;
+        text-align: center;
     }
 
     &__button-arrow {

@@ -85,6 +85,7 @@
     &__buttons {
         display: flex;
         align-items: center;
+        width: 100%;
         gap: 20px;
     }
 
@@ -96,7 +97,7 @@
 .prev-home {
     cursor: pointer;
     position: absolute;
-    left: 0px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%) scale(100%);
     transition: all 0.2s linear;
@@ -118,7 +119,7 @@
 .next-home {
     cursor: pointer;
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%) scale(100%);
     transition: all 0.2s linear;
@@ -132,9 +133,11 @@
 @keyframes buttonScale {
     0% {
         transform: translateY(-50%) scale(100%);
-    } 50% {
+    }
+    50% {
         transform: translateY(-50%) scale(110%);
-    } 100% {
+    }
+    100% {
         transform: translateY(-50%) scale(100%);
     }
 }
@@ -395,6 +398,10 @@
     background: #3f3f3f;
     padding: 18px 22px;
     color: #fff;
+    width: 100%;
+    max-width: 322px;
+    justify-content: center;
+    text-align: center;
 
     &__text {
         font-weight: 600;
