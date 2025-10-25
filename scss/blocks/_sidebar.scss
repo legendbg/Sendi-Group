@@ -44,6 +44,14 @@
         flex-direction: column;
         gap: 25px;
     }
+
+    &__social path {
+        transition: all 0.2s linear;
+    }
+
+    &__social:hover path {
+        fill: #f80;
+    }
 }
 
 .notfound-sidebar {

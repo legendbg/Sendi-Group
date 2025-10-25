@@ -57,6 +57,7 @@ const whoSlider = new Swiper(".who-slider", {
     },
     pagination: {
         el: ".who-pagination",
+        clickable: true
     },
 });
 
